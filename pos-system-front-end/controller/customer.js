@@ -1,4 +1,3 @@
-import CustomerModel from "../model/CustomerModel.js";
 
 // Initialize selected row index
 var selectedRowIndex = -1

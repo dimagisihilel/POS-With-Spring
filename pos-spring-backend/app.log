@@ -15573,3 +15573,1182 @@ java.lang.Exception: exception just for purpose of providing stack trace
 19:27:28.930 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
 19:27:28.930 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Nothing to write: null body
 19:27:28.930 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 201 CREATED
+19:59:42.446 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/possystem/api/v1/item?all=true", parameters={masked}
+19:59:42.450 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.ItemController#getAllItems()
+19:59:42.451 [http-nio-8080-exec-2] INFO  l.i.p.controller.ItemController - Retrieving all items
+19:59:42.452 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.ItemServiceImpl.getAllItems]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+19:59:42.452 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(1078921441<open>)] for JPA transaction
+19:59:42.452 [http-nio-8080-exec-2] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+19:59:42.452 [http-nio-8080-exec-2] DEBUG o.h.e.t.internal.TransactionImpl - begin
+19:59:42.452 [http-nio-8080-exec-2] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+19:59:42.497 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/possystem/api/v1/order/nextId", parameters={}
+19:59:42.497 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.OrderController#getNextOrderId()
+19:59:42.498 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.OrderServiceImpl.generateNextOrderId]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+19:59:42.498 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(2103311807<open>)] for JPA transaction
+19:59:42.498 [http-nio-8080-exec-4] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+19:59:42.499 [http-nio-8080-exec-4] DEBUG o.h.e.t.internal.TransactionImpl - begin
+19:59:42.499 [http-nio-8080-exec-4] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+19:59:42.501 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/possystem/api/v1/customer", parameters={}
+19:59:42.497 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/possystem/api/v1/customer?all=true", parameters={masked}
+19:59:42.501 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.CustomerController#getAllCustomers()
+19:59:42.501 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.CustomerController#getAllCustomers()
+19:59:42.502 [http-nio-8080-exec-9] INFO  l.i.p.controller.CustomerController - Retrieving all customers
+19:59:42.502 [http-nio-8080-exec-5] INFO  l.i.p.controller.CustomerController - Retrieving all customers
+19:59:42.502 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.CustomerServiceImpl.getAllCustomers]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+19:59:42.502 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.CustomerServiceImpl.getAllCustomers]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+19:59:42.502 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(612665782<open>)] for JPA transaction
+19:59:42.502 [http-nio-8080-exec-9] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+19:59:42.502 [http-nio-8080-exec-9] DEBUG o.h.e.t.internal.TransactionImpl - begin
+19:59:42.502 [http-nio-8080-exec-9] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+19:59:42.501 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/possystem/api/v1/item", parameters={}
+19:59:42.503 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.ItemController#getAllItems()
+19:59:42.502 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(1787635229<open>)] for JPA transaction
+19:59:42.504 [http-nio-8080-exec-5] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+19:59:42.504 [http-nio-8080-exec-5] DEBUG o.h.e.t.internal.TransactionImpl - begin
+19:59:42.504 [http-nio-8080-exec-5] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+19:59:42.505 [http-nio-8080-exec-6] INFO  l.i.p.controller.ItemController - Retrieving all items
+19:59:42.505 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.ItemServiceImpl.getAllItems]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+19:59:42.505 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(219876234<open>)] for JPA transaction
+19:59:42.505 [http-nio-8080-exec-6] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+19:59:42.505 [http-nio-8080-exec-6] DEBUG o.h.e.t.internal.TransactionImpl - begin
+19:59:42.505 [http-nio-8080-exec-6] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+19:59:42.551 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@2b63b499]
+19:59:42.551 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(219876234<open>)] for JPA transaction
+19:59:42.551 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+19:59:42.550 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@2e7ce2c6]
+19:59:42.552 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(612665782<open>)] for JPA transaction
+19:59:42.552 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+19:59:42.553 [http-nio-8080-exec-9] DEBUG org.hibernate.orm.sql.ast.create - Created new SQL alias : ce1_0
+19:59:42.553 [http-nio-8080-exec-9] DEBUG org.hibernate.orm.sql.ast.create - Registration of TableGroup [StandardTableGroup(lk.ijse.posspringbackend.entity.impl.CustomerEntity(6))] with identifierForTableGroup [lk.ijse.posspringbackend.entity.impl.CustomerEntity] for NavigablePath [lk.ijse.posspringbackend.entity.impl.CustomerEntity] 
+19:59:42.554 [http-nio-8080-exec-9] DEBUG org.hibernate.orm.results.graph.AST - DomainResult Graph:
+ \-EntityResultImpl [lk.ijse.posspringbackend.entity.impl.CustomerEntity(6)]
+ |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity(6).address]
+ |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity(6).contact]
+ |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity(6).name]
+ |  \-DelayedCollectionFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity(6).orders]
+
+19:59:42.554 [http-nio-8080-exec-9] DEBUG org.hibernate.orm.sql.ast.tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (ce1 : lk.ijse.posspringbackend.entity.impl.CustomerEntity(6)) {
+          primaryTableReference : customers as ce1_0
+        }
+      }
+    }
+
+19:59:42.554 [http-nio-8080-exec-9] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+19:59:42.555 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - select ce1_0.customerId,ce1_0.address,ce1_0.contact,ce1_0.name from customers ce1_0
+19:59:42.555 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@1334684c]
+19:59:42.555 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1078921441<open>)] for JPA transaction
+19:59:42.555 [http-nio-8080-exec-6] DEBUG org.hibernate.orm.sql.ast.create - Created new SQL alias : ie1_0
+19:59:42.555 [http-nio-8080-exec-6] DEBUG org.hibernate.orm.sql.ast.create - Registration of TableGroup [StandardTableGroup(lk.ijse.posspringbackend.entity.impl.ItemEntity(5))] with identifierForTableGroup [lk.ijse.posspringbackend.entity.impl.ItemEntity] for NavigablePath [lk.ijse.posspringbackend.entity.impl.ItemEntity] 
+19:59:42.556 [http-nio-8080-exec-6] DEBUG org.hibernate.orm.results.graph.AST - DomainResult Graph:
+ \-EntityResultImpl [lk.ijse.posspringbackend.entity.impl.ItemEntity(5)]
+ |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.ItemEntity(5).description]
+ |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.ItemEntity(5).qtyOnHand]
+ |  \-BasicFetch [lk.ijse.posspringbackend.entity.impl.ItemEntity(5).unitPrice]
+
+19:59:42.556 [http-nio-8080-exec-6] DEBUG org.hibernate.orm.sql.ast.tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (ie1 : lk.ijse.posspringbackend.entity.impl.ItemEntity(5)) {
+          primaryTableReference : items as ie1_0
+        }
+      }
+    }
+
+19:59:42.557 [http-nio-8080-exec-6] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+19:59:42.557 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - select ie1_0.itemId,ie1_0.description,ie1_0.qtyOnHand,ie1_0.unitPrice from items ie1_0
+19:59:42.559 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@135fa75f]
+19:59:42.559 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1787635229<open>)] for JPA transaction
+19:59:42.559 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+19:59:42.560 [http-nio-8080-exec-6] DEBUG org.hibernate.orm.results - Initializer list:
+	  lk.ijse.posspringbackend.entity.impl.ItemEntity(5) -> EntityJoinedFetchInitializer(lk.ijse.posspringbackend.entity.impl.ItemEntity(5))@1741143565 (SingleTableEntityPersister(lk.ijse.posspringbackend.entity.impl.ItemEntity))
+
+19:59:42.560 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.ast.create - Created new SQL alias : ce1_0
+19:59:42.560 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.ast.create - Registration of TableGroup [StandardTableGroup(lk.ijse.posspringbackend.entity.impl.CustomerEntity(7))] with identifierForTableGroup [lk.ijse.posspringbackend.entity.impl.CustomerEntity] for NavigablePath [lk.ijse.posspringbackend.entity.impl.CustomerEntity] 
+19:59:42.560 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.results.graph.AST - DomainResult Graph:
+ \-EntityResultImpl [lk.ijse.posspringbackend.entity.impl.CustomerEntity(7)]
+ |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity(7).address]
+ |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity(7).contact]
+ |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity(7).name]
+ |  \-DelayedCollectionFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity(7).orders]
+
+19:59:42.560 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.ast.tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (ce1 : lk.ijse.posspringbackend.entity.impl.CustomerEntity(7)) {
+          primaryTableReference : customers as ce1_0
+        }
+      }
+    }
+
+19:59:42.561 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+19:59:42.561 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - select ce1_0.customerId,ce1_0.address,ce1_0.contact,ce1_0.name from customers ce1_0
+19:59:42.562 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@2fb6db83]
+19:59:42.563 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.results - Initializer list:
+	  lk.ijse.posspringbackend.entity.impl.CustomerEntity(7).orders -> DelayedCollectionInitializer(lk.ijse.posspringbackend.entity.impl.CustomerEntity(7).orders)@1173579661 (PluralAttribute(lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders))
+	  lk.ijse.posspringbackend.entity.impl.CustomerEntity(7) -> EntityJoinedFetchInitializer(lk.ijse.posspringbackend.entity.impl.CustomerEntity(7))@531676110 (SingleTableEntityPersister(lk.ijse.posspringbackend.entity.impl.CustomerEntity))
+
+19:59:42.563 [http-nio-8080-exec-4] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+19:59:42.563 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - SELECT orderId FROM orders ORDER BY orderId DESC LIMIT 1
+19:59:42.565 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+19:59:42.565 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1787635229<open>)]
+19:59:42.565 [http-nio-8080-exec-5] DEBUG o.h.e.t.internal.TransactionImpl - committing
+19:59:42.565 [http-nio-8080-exec-5] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+19:59:42.565 [http-nio-8080-exec-5] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+19:59:42.566 [http-nio-8080-exec-5] DEBUG o.h.engine.internal.Collections - Collection found: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C001], was: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C001] (uninitialized)
+19:59:42.566 [http-nio-8080-exec-5] DEBUG o.h.engine.internal.Collections - Collection found: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C002], was: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C002] (uninitialized)
+19:59:42.566 [http-nio-8080-exec-5] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
+19:59:42.566 [http-nio-8080-exec-5] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
+19:59:42.566 [http-nio-8080-exec-5] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+19:59:42.566 [http-nio-8080-exec-5] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.CustomerEntity{address=Panadura, contact=0713686811, customerId=C001, name=Dimagi, orders=<uninitialized>}
+19:59:42.566 [http-nio-8080-exec-5] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.CustomerEntity{address=Wakada, contact=0713686812, customerId=C002, name=Warsha, orders=<uninitialized>}
+19:59:42.555 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+19:59:42.567 [http-nio-8080-exec-9] DEBUG org.hibernate.orm.results - Initializer list:
+	  lk.ijse.posspringbackend.entity.impl.CustomerEntity(6).orders -> DelayedCollectionInitializer(lk.ijse.posspringbackend.entity.impl.CustomerEntity(6).orders)@2129904822 (PluralAttribute(lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders))
+	  lk.ijse.posspringbackend.entity.impl.CustomerEntity(6) -> EntityJoinedFetchInitializer(lk.ijse.posspringbackend.entity.impl.CustomerEntity(6))@150474353 (SingleTableEntityPersister(lk.ijse.posspringbackend.entity.impl.CustomerEntity))
+
+19:59:42.568 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.sql.ast.create - Created new SQL alias : ie1_0
+19:59:42.568 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.sql.ast.create - Registration of TableGroup [StandardTableGroup(lk.ijse.posspringbackend.entity.impl.ItemEntity(8))] with identifierForTableGroup [lk.ijse.posspringbackend.entity.impl.ItemEntity] for NavigablePath [lk.ijse.posspringbackend.entity.impl.ItemEntity] 
+19:59:42.568 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+19:59:42.568 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(612665782<open>)]
+19:59:42.568 [http-nio-8080-exec-9] DEBUG o.h.e.t.internal.TransactionImpl - committing
+19:59:42.572 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(1787635229<open>)] after transaction
+19:59:42.572 [http-nio-8080-exec-9] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+19:59:42.572 [http-nio-8080-exec-9] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+19:59:42.573 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/javascript, */*;q=0.01] and supported [application/json]
+19:59:42.573 [http-nio-8080-exec-9] DEBUG o.h.engine.internal.Collections - Collection found: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C001], was: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C001] (uninitialized)
+19:59:42.573 [http-nio-8080-exec-9] DEBUG o.h.engine.internal.Collections - Collection found: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C002], was: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C002] (uninitialized)
+19:59:42.573 [http-nio-8080-exec-9] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
+19:59:42.573 [http-nio-8080-exec-9] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
+19:59:42.574 [http-nio-8080-exec-9] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+19:59:42.574 [http-nio-8080-exec-9] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.CustomerEntity{address=Panadura, contact=0713686811, customerId=C001, name=Dimagi, orders=<uninitialized>}
+19:59:42.574 [http-nio-8080-exec-9] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.CustomerEntity{address=Wakada, contact=0713686812, customerId=C002, name=Warsha, orders=<uninitialized>}
+19:59:42.573 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[CustomerDTO(customerId=C001, name=Dimagi, address=Panadura, contact=0713686811), CustomerDTO(custom (truncated)...]
+19:59:42.575 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.results.graph.AST - DomainResult Graph:
+ \-EntityResultImpl [lk.ijse.posspringbackend.entity.impl.ItemEntity(8)]
+ |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.ItemEntity(8).description]
+ |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.ItemEntity(8).qtyOnHand]
+ |  \-BasicFetch [lk.ijse.posspringbackend.entity.impl.ItemEntity(8).unitPrice]
+
+19:59:42.575 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.sql.ast.tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (ie1 : lk.ijse.posspringbackend.entity.impl.ItemEntity(8)) {
+          primaryTableReference : items as ie1_0
+        }
+      }
+    }
+
+19:59:42.576 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+19:59:42.576 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select ie1_0.itemId,ie1_0.description,ie1_0.qtyOnHand,ie1_0.unitPrice from items ie1_0
+19:59:42.573 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+19:59:42.577 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(219876234<open>)]
+19:59:42.577 [http-nio-8080-exec-6] DEBUG o.h.e.t.internal.TransactionImpl - committing
+19:59:42.577 [http-nio-8080-exec-6] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+19:59:42.577 [http-nio-8080-exec-6] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+19:59:42.578 [http-nio-8080-exec-6] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
+19:59:42.578 [http-nio-8080-exec-6] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+19:59:42.578 [http-nio-8080-exec-6] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+19:59:42.578 [http-nio-8080-exec-6] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.ItemEntity{unitPrice=20.0, itemId=I002, description=pen, qtyOnHand=177}
+19:59:42.578 [http-nio-8080-exec-6] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.ItemEntity{unitPrice=30.0, itemId=I001, description=Bun, qtyOnHand=119}
+19:59:42.581 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.results - Initializer list:
+	  lk.ijse.posspringbackend.entity.impl.ItemEntity(8) -> EntityJoinedFetchInitializer(lk.ijse.posspringbackend.entity.impl.ItemEntity(8))@1771098457 (SingleTableEntityPersister(lk.ijse.posspringbackend.entity.impl.ItemEntity))
+
+19:59:42.583 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+19:59:42.583 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1078921441<open>)]
+19:59:42.583 [http-nio-8080-exec-2] DEBUG o.h.e.t.internal.TransactionImpl - committing
+19:59:42.583 [http-nio-8080-exec-2] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+19:59:42.583 [http-nio-8080-exec-2] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+19:59:42.583 [http-nio-8080-exec-2] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
+19:59:42.583 [http-nio-8080-exec-2] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+19:59:42.583 [http-nio-8080-exec-2] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+19:59:42.583 [http-nio-8080-exec-2] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.ItemEntity{unitPrice=20.0, itemId=I002, description=pen, qtyOnHand=177}
+19:59:42.583 [http-nio-8080-exec-2] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.ItemEntity{unitPrice=30.0, itemId=I001, description=Bun, qtyOnHand=119}
+19:59:42.585 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(219876234<open>)] after transaction
+19:59:42.585 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(612665782<open>)] after transaction
+19:59:42.585 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+19:59:42.586 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json]
+19:59:42.586 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[ItemDTO(itemId=I001, description=Bun, unitPrice=30.0, qtyOnHand=119), ItemDTO(itemId=I002, descript (truncated)...]
+19:59:42.588 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+19:59:42.591 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json]
+19:59:42.591 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[CustomerDTO(customerId=C001, name=Dimagi, address=Panadura, contact=0713686811), CustomerDTO(custom (truncated)...]
+19:59:42.593 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+19:59:42.593 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(1078921441<open>)] after transaction
+19:59:42.595 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/javascript, */*;q=0.01] and supported [application/json]
+19:59:42.596 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[ItemDTO(itemId=I001, description=Bun, unitPrice=30.0, qtyOnHand=119), ItemDTO(itemId=I002, descript (truncated)...]
+19:59:42.598 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+19:59:42.599 [http-nio-8080-exec-4] DEBUG org.hibernate.orm.results - Initializer list is empty
+19:59:42.600 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+19:59:42.600 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(2103311807<open>)]
+19:59:42.600 [http-nio-8080-exec-4] DEBUG o.h.e.t.internal.TransactionImpl - committing
+19:59:42.601 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(2103311807<open>)] after transaction
+19:59:42.602 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain]
+19:59:42.602 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing ["ORD003"]
+19:59:42.603 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20:00:21.112 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - OPTIONS "/possystem/api/v1/customer", parameters={}
+20:00:21.115 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.CustomerController#saveCustomer(CustomerDTO)
+20:00:21.117 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20:00:21.128 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - POST "/possystem/api/v1/customer", parameters={}
+20:00:21.129 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.CustomerController#saveCustomer(CustomerDTO)
+20:00:21.134 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [CustomerDTO(customerId=C003, name=Malithi, address=Bandaragama, contact=0713686811)]
+20:00:21.135 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.CustomerServiceImpl.saveCustomer]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+20:00:21.135 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(351904481<open>)] for JPA transaction
+20:00:21.135 [http-nio-8080-exec-6] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:00:21.135 [http-nio-8080-exec-6] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:00:21.135 [http-nio-8080-exec-6] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+20:00:21.167 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@513d64e6]
+20:00:21.176 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(351904481<open>)] for JPA transaction
+20:00:21.176 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:00:21.176 [http-nio-8080-exec-6] DEBUG o.h.j.i.PersistenceUnitUtilImpl - jakarta.persistence.PersistenceUnitUtil.getIdentifier is only intended to work with enhanced entities (although Hibernate also adapts this support to its proxies); however the passed entity was not enhanced (nor a proxy).. may not be able to read identifier
+20:00:21.178 [http-nio-8080-exec-6] DEBUG org.hibernate.orm.sql.ast.create - Created new SQL alias : ce1_0
+20:00:21.179 [http-nio-8080-exec-6] DEBUG org.hibernate.orm.sql.ast.create - Registration of TableGroup [StandardTableGroup(lk.ijse.posspringbackend.entity.impl.CustomerEntity)] with identifierForTableGroup [lk.ijse.posspringbackend.entity.impl.CustomerEntity] for NavigablePath [lk.ijse.posspringbackend.entity.impl.CustomerEntity] 
+20:00:21.179 [http-nio-8080-exec-6] DEBUG org.hibernate.orm.sql.ast.create - Created new SQL alias : o1_0
+20:00:21.179 [http-nio-8080-exec-6] DEBUG org.hibernate.orm.sql.ast.create - Registration of TableGroup [org.hibernate.sql.ast.tree.from.OneToManyTableGroup@227fcf1] with identifierForTableGroup [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders] for NavigablePath [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders] 
+20:00:21.180 [http-nio-8080-exec-6] DEBUG org.hibernate.orm.sql.ast.create - Registration of TableGroup [StandardTableGroup(lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders.{element})] with identifierForTableGroup [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders.{element}] for NavigablePath [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders.{element}] 
+20:00:21.181 [http-nio-8080-exec-6] DEBUG org.hibernate.orm.results.graph.AST - DomainResult Graph:
+ \-EntityResultImpl [lk.ijse.posspringbackend.entity.impl.CustomerEntity]
+ |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity.address]
+ |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity.contact]
+ |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity.name]
+ |  \-EagerCollectionFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders]
+ |  |  \-EntityFetchJoinedImpl [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders.{element}]
+ |  |  |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders.{element}.balance]
+ |  |  |  +-CircularBiDirectionalFetchImpl [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders.{element}.customer]
+ |  |  |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders.{element}.discount]
+ |  |  |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders.{element}.newTotal]
+ |  |  |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders.{element}.orderDate]
+ |  |  |  +-SelectEagerCollectionFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders.{element}.orderDetails]
+ |  |  |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders.{element}.paidAmount]
+ |  |  |  \-BasicFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders.{element}.total]
+
+20:00:21.182 [http-nio-8080-exec-6] DEBUG org.hibernate.orm.sql.ast.tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (ce1 : lk.ijse.posspringbackend.entity.impl.CustomerEntity) {
+          primaryTableReference : customers as ce1_0
+          TableGroupJoins {
+            left  join OneToManyTableGroup (o1 : lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders) {
+              primaryTableReference : orders as o1_0
+            }
+          }
+        }
+      }
+    }
+
+20:00:21.183 [http-nio-8080-exec-6] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+20:00:21.183 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - select ce1_0.customerId,ce1_0.address,ce1_0.contact,ce1_0.name,o1_0.customer_id,o1_0.orderId,o1_0.balance,o1_0.discount,o1_0.newTotal,o1_0.orderDate,o1_0.paidAmount,o1_0.total from customers ce1_0 left join orders o1_0 on ce1_0.customerId=o1_0.customer_id where ce1_0.customerId=?
+20:00:21.185 [http-nio-8080-exec-6] DEBUG org.hibernate.orm.results - Initializer list:
+	  lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders -> BagInitializer(lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders)@2135630219 (PluralAttribute(lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders))
+	  lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders.{element} -> EntityJoinedFetchInitializer(lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders.{element})@249234919 (EntityCollectionPart(lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#{element})@980016208)
+	  lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders.{element}.orderDetails -> SelectEagerCollectionInitializer(lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders.{element}.orderDetails)@1287903768 (PluralAttribute(lk.ijse.posspringbackend.entity.impl.OrderEntity.orderDetails))
+	  lk.ijse.posspringbackend.entity.impl.CustomerEntity -> EntityJoinedFetchInitializer(lk.ijse.posspringbackend.entity.impl.CustomerEntity)@1789066610 (SingleTableEntityPersister(lk.ijse.posspringbackend.entity.impl.CustomerEntity))
+
+20:00:21.218 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+20:00:21.218 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(351904481<open>)]
+20:00:21.218 [http-nio-8080-exec-6] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:00:21.218 [http-nio-8080-exec-6] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:00:21.218 [http-nio-8080-exec-6] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:00:21.218 [http-nio-8080-exec-6] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 1 insertions, 0 updates, 0 deletions to 1 objects
+20:00:21.218 [http-nio-8080-exec-6] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:00:21.218 [http-nio-8080-exec-6] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:00:21.219 [http-nio-8080-exec-6] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.CustomerEntity{address=Bandaragama, contact=0713686811, customerId=C003, name=Malithi, orders=null}
+20:00:21.219 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - insert into customers (address,contact,name,customerId) values (?,?,?,?)
+20:00:21.263 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(351904481<open>)] after transaction
+20:00:21.265 [http-nio-8080-exec-6] INFO  l.i.p.controller.CustomerController - Customer saved successfully: C003
+20:00:21.265 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json]
+20:00:21.266 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Nothing to write: null body
+20:00:21.266 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 201 CREATED
+20:00:22.812 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/possystem/api/v1/customer?all=true", parameters={masked}
+20:00:22.813 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.CustomerController#getAllCustomers()
+20:00:22.813 [http-nio-8080-exec-9] INFO  l.i.p.controller.CustomerController - Retrieving all customers
+20:00:22.814 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.CustomerServiceImpl.getAllCustomers]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+20:00:22.814 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(176567166<open>)] for JPA transaction
+20:00:22.814 [http-nio-8080-exec-9] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:00:22.814 [http-nio-8080-exec-9] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:00:22.814 [http-nio-8080-exec-9] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+20:00:22.843 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@2d089fdf]
+20:00:22.844 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(176567166<open>)] for JPA transaction
+20:00:22.844 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:00:22.845 [http-nio-8080-exec-9] DEBUG org.hibernate.orm.sql.ast.create - Created new SQL alias : ce1_0
+20:00:22.845 [http-nio-8080-exec-9] DEBUG org.hibernate.orm.sql.ast.create - Registration of TableGroup [StandardTableGroup(lk.ijse.posspringbackend.entity.impl.CustomerEntity(9))] with identifierForTableGroup [lk.ijse.posspringbackend.entity.impl.CustomerEntity] for NavigablePath [lk.ijse.posspringbackend.entity.impl.CustomerEntity] 
+20:00:22.846 [http-nio-8080-exec-9] DEBUG org.hibernate.orm.results.graph.AST - DomainResult Graph:
+ \-EntityResultImpl [lk.ijse.posspringbackend.entity.impl.CustomerEntity(9)]
+ |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity(9).address]
+ |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity(9).contact]
+ |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity(9).name]
+ |  \-DelayedCollectionFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity(9).orders]
+
+20:00:22.846 [http-nio-8080-exec-9] DEBUG org.hibernate.orm.sql.ast.tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (ce1 : lk.ijse.posspringbackend.entity.impl.CustomerEntity(9)) {
+          primaryTableReference : customers as ce1_0
+        }
+      }
+    }
+
+20:00:22.847 [http-nio-8080-exec-9] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+20:00:22.847 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - select ce1_0.customerId,ce1_0.address,ce1_0.contact,ce1_0.name from customers ce1_0
+20:00:22.849 [http-nio-8080-exec-9] DEBUG org.hibernate.orm.results - Initializer list:
+	  lk.ijse.posspringbackend.entity.impl.CustomerEntity(9) -> EntityJoinedFetchInitializer(lk.ijse.posspringbackend.entity.impl.CustomerEntity(9))@2139570599 (SingleTableEntityPersister(lk.ijse.posspringbackend.entity.impl.CustomerEntity))
+	  lk.ijse.posspringbackend.entity.impl.CustomerEntity(9).orders -> DelayedCollectionInitializer(lk.ijse.posspringbackend.entity.impl.CustomerEntity(9).orders)@866428349 (PluralAttribute(lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders))
+
+20:00:22.851 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+20:00:22.851 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(176567166<open>)]
+20:00:22.851 [http-nio-8080-exec-9] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:00:22.851 [http-nio-8080-exec-9] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:00:22.851 [http-nio-8080-exec-9] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:00:22.852 [http-nio-8080-exec-9] DEBUG o.h.engine.internal.Collections - Collection found: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C001], was: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C001] (uninitialized)
+20:00:22.852 [http-nio-8080-exec-9] DEBUG o.h.engine.internal.Collections - Collection found: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C002], was: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C002] (uninitialized)
+20:00:22.852 [http-nio-8080-exec-9] DEBUG o.h.engine.internal.Collections - Collection found: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C003], was: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C003] (uninitialized)
+20:00:22.852 [http-nio-8080-exec-9] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 3 objects
+20:00:22.852 [http-nio-8080-exec-9] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 3 collections
+20:00:22.852 [http-nio-8080-exec-9] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:00:22.852 [http-nio-8080-exec-9] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.CustomerEntity{address=Bandaragama, contact=0713686811, customerId=C003, name=Malithi, orders=<uninitialized>}
+20:00:22.852 [http-nio-8080-exec-9] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.CustomerEntity{address=Panadura, contact=0713686811, customerId=C001, name=Dimagi, orders=<uninitialized>}
+20:00:22.852 [http-nio-8080-exec-9] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.CustomerEntity{address=Wakada, contact=0713686812, customerId=C002, name=Warsha, orders=<uninitialized>}
+20:00:22.853 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(176567166<open>)] after transaction
+20:00:22.855 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/javascript, */*;q=0.01] and supported [application/json]
+20:00:22.856 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[CustomerDTO(customerId=C001, name=Dimagi, address=Panadura, contact=0713686811), CustomerDTO(custom (truncated)...]
+20:00:22.857 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20:00:46.610 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - OPTIONS "/possystem/api/v1/customer/C003", parameters={}
+20:00:46.610 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.CustomerController#updateCustomer(CustomerDTO, String)
+20:00:46.611 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20:00:46.615 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - PUT "/possystem/api/v1/customer/C003", parameters={}
+20:00:46.616 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.CustomerController#updateCustomer(CustomerDTO, String)
+20:00:46.619 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [CustomerDTO(customerId=C003, name=Malithi Meth, address=Bandaragama, contact=0713686845)]
+20:00:46.620 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.CustomerServiceImpl.updateCustomer]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+20:00:46.620 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(345435455<open>)] for JPA transaction
+20:00:46.620 [http-nio-8080-exec-8] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:00:46.620 [http-nio-8080-exec-8] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:00:46.620 [http-nio-8080-exec-8] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+20:00:46.633 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@4cf6abb9]
+20:00:46.634 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(345435455<open>)] for JPA transaction
+20:00:46.634 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:00:46.635 [http-nio-8080-exec-8] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+20:00:46.635 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - select ce1_0.customerId,ce1_0.address,ce1_0.contact,ce1_0.name from customers ce1_0 where ce1_0.customerId=?
+20:00:46.637 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+20:00:46.637 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(345435455<open>)]
+20:00:46.637 [http-nio-8080-exec-8] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:00:46.637 [http-nio-8080-exec-8] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:00:46.637 [http-nio-8080-exec-8] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:00:46.638 [http-nio-8080-exec-8] DEBUG o.h.engine.internal.Collections - Collection found: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C003], was: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C003] (uninitialized)
+20:00:46.639 [http-nio-8080-exec-8] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
+20:00:46.639 [http-nio-8080-exec-8] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
+20:00:46.639 [http-nio-8080-exec-8] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:00:46.639 [http-nio-8080-exec-8] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.CustomerEntity{address=Bandaragama, contact=0713686845, customerId=C003, name=Malithi Meth, orders=<uninitialized>}
+20:00:46.640 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - update customers set address=?,contact=?,name=? where customerId=?
+20:00:46.658 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(345435455<open>)] after transaction
+20:00:46.659 [http-nio-8080-exec-8] INFO  l.i.p.controller.CustomerController - Updated customer with ID: C003
+20:00:46.660 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+20:00:46.660 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Nothing to write: null body
+20:00:46.660 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 204 NO_CONTENT
+20:00:48.039 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/possystem/api/v1/customer?all=true", parameters={masked}
+20:00:48.040 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.CustomerController#getAllCustomers()
+20:00:48.041 [http-nio-8080-exec-10] INFO  l.i.p.controller.CustomerController - Retrieving all customers
+20:00:48.041 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.CustomerServiceImpl.getAllCustomers]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+20:00:48.041 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(1323268931<open>)] for JPA transaction
+20:00:48.041 [http-nio-8080-exec-10] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:00:48.041 [http-nio-8080-exec-10] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:00:48.041 [http-nio-8080-exec-10] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+20:00:48.063 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@909efd3]
+20:00:48.063 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1323268931<open>)] for JPA transaction
+20:00:48.063 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:00:48.064 [http-nio-8080-exec-10] DEBUG org.hibernate.orm.sql.ast.create - Created new SQL alias : ce1_0
+20:00:48.065 [http-nio-8080-exec-10] DEBUG org.hibernate.orm.sql.ast.create - Registration of TableGroup [StandardTableGroup(lk.ijse.posspringbackend.entity.impl.CustomerEntity(10))] with identifierForTableGroup [lk.ijse.posspringbackend.entity.impl.CustomerEntity] for NavigablePath [lk.ijse.posspringbackend.entity.impl.CustomerEntity] 
+20:00:48.065 [http-nio-8080-exec-10] DEBUG org.hibernate.orm.results.graph.AST - DomainResult Graph:
+ \-EntityResultImpl [lk.ijse.posspringbackend.entity.impl.CustomerEntity(10)]
+ |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity(10).address]
+ |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity(10).contact]
+ |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity(10).name]
+ |  \-DelayedCollectionFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity(10).orders]
+
+20:00:48.066 [http-nio-8080-exec-10] DEBUG org.hibernate.orm.sql.ast.tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (ce1 : lk.ijse.posspringbackend.entity.impl.CustomerEntity(10)) {
+          primaryTableReference : customers as ce1_0
+        }
+      }
+    }
+
+20:00:48.066 [http-nio-8080-exec-10] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+20:00:48.066 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - select ce1_0.customerId,ce1_0.address,ce1_0.contact,ce1_0.name from customers ce1_0
+20:00:48.068 [http-nio-8080-exec-10] DEBUG org.hibernate.orm.results - Initializer list:
+	  lk.ijse.posspringbackend.entity.impl.CustomerEntity(10).orders -> DelayedCollectionInitializer(lk.ijse.posspringbackend.entity.impl.CustomerEntity(10).orders)@1245056991 (PluralAttribute(lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders))
+	  lk.ijse.posspringbackend.entity.impl.CustomerEntity(10) -> EntityJoinedFetchInitializer(lk.ijse.posspringbackend.entity.impl.CustomerEntity(10))@125355497 (SingleTableEntityPersister(lk.ijse.posspringbackend.entity.impl.CustomerEntity))
+
+20:00:48.077 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+20:00:48.077 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1323268931<open>)]
+20:00:48.077 [http-nio-8080-exec-10] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:00:48.077 [http-nio-8080-exec-10] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:00:48.077 [http-nio-8080-exec-10] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:00:48.077 [http-nio-8080-exec-10] DEBUG o.h.engine.internal.Collections - Collection found: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C001], was: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C001] (uninitialized)
+20:00:48.078 [http-nio-8080-exec-10] DEBUG o.h.engine.internal.Collections - Collection found: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C002], was: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C002] (uninitialized)
+20:00:48.078 [http-nio-8080-exec-10] DEBUG o.h.engine.internal.Collections - Collection found: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C003], was: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C003] (uninitialized)
+20:00:48.078 [http-nio-8080-exec-10] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 3 objects
+20:00:48.078 [http-nio-8080-exec-10] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 3 collections
+20:00:48.078 [http-nio-8080-exec-10] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:00:48.078 [http-nio-8080-exec-10] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.CustomerEntity{address=Bandaragama, contact=0713686845, customerId=C003, name=Malithi Meth, orders=<uninitialized>}
+20:00:48.078 [http-nio-8080-exec-10] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.CustomerEntity{address=Panadura, contact=0713686811, customerId=C001, name=Dimagi, orders=<uninitialized>}
+20:00:48.078 [http-nio-8080-exec-10] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.CustomerEntity{address=Wakada, contact=0713686812, customerId=C002, name=Warsha, orders=<uninitialized>}
+20:00:48.079 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(1323268931<open>)] after transaction
+20:00:48.081 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/javascript, */*;q=0.01] and supported [application/json]
+20:00:48.083 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[CustomerDTO(customerId=C001, name=Dimagi, address=Panadura, contact=0713686811), CustomerDTO(custom (truncated)...]
+20:00:48.084 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20:01:02.037 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/possystem/api/v1/item?all=true", parameters={masked}
+20:01:02.038 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.ItemController#getAllItems()
+20:01:02.038 [http-nio-8080-exec-7] INFO  l.i.p.controller.ItemController - Retrieving all items
+20:01:02.038 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.ItemServiceImpl.getAllItems]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+20:01:02.039 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(1203531715<open>)] for JPA transaction
+20:01:02.039 [http-nio-8080-exec-7] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:01:02.039 [http-nio-8080-exec-7] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:01:02.039 [http-nio-8080-exec-7] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+20:01:02.059 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/possystem/api/v1/customer?all=true", parameters={masked}
+20:01:02.060 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.CustomerController#getAllCustomers()
+20:01:02.061 [http-nio-8080-exec-3] INFO  l.i.p.controller.CustomerController - Retrieving all customers
+20:01:02.061 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.CustomerServiceImpl.getAllCustomers]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+20:01:02.062 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(1468831044<open>)] for JPA transaction
+20:01:02.062 [http-nio-8080-exec-3] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:01:02.062 [http-nio-8080-exec-3] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:01:02.062 [http-nio-8080-exec-3] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+20:01:02.065 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/possystem/api/v1/order/nextId", parameters={}
+20:01:02.066 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.OrderController#getNextOrderId()
+20:01:02.067 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.OrderServiceImpl.generateNextOrderId]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+20:01:02.067 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(105401978<open>)] for JPA transaction
+20:01:02.067 [http-nio-8080-exec-1] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:01:02.067 [http-nio-8080-exec-1] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:01:02.067 [http-nio-8080-exec-1] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+20:01:02.076 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/possystem/api/v1/customer", parameters={}
+20:01:02.077 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.CustomerController#getAllCustomers()
+20:01:02.087 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/possystem/api/v1/item", parameters={}
+20:01:02.088 [http-nio-8080-exec-5] INFO  l.i.p.controller.CustomerController - Retrieving all customers
+20:01:02.088 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.CustomerServiceImpl.getAllCustomers]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+20:01:02.088 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(2066635350<open>)] for JPA transaction
+20:01:02.088 [http-nio-8080-exec-5] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:01:02.088 [http-nio-8080-exec-5] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:01:02.089 [http-nio-8080-exec-5] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+20:01:02.091 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.ItemController#getAllItems()
+20:01:02.092 [http-nio-8080-exec-6] INFO  l.i.p.controller.ItemController - Retrieving all items
+20:01:02.093 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.ItemServiceImpl.getAllItems]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+20:01:02.093 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(1737154101<open>)] for JPA transaction
+20:01:02.093 [http-nio-8080-exec-6] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:01:02.093 [http-nio-8080-exec-6] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:01:02.093 [http-nio-8080-exec-6] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+20:01:02.105 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@6524ee09]
+20:01:02.106 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1468831044<open>)] for JPA transaction
+20:01:02.106 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:01:02.108 [http-nio-8080-exec-3] DEBUG org.hibernate.orm.sql.ast.create - Created new SQL alias : ce1_0
+20:01:02.108 [http-nio-8080-exec-3] DEBUG org.hibernate.orm.sql.ast.create - Registration of TableGroup [StandardTableGroup(lk.ijse.posspringbackend.entity.impl.CustomerEntity(11))] with identifierForTableGroup [lk.ijse.posspringbackend.entity.impl.CustomerEntity] for NavigablePath [lk.ijse.posspringbackend.entity.impl.CustomerEntity] 
+20:01:02.111 [http-nio-8080-exec-3] DEBUG org.hibernate.orm.results.graph.AST - DomainResult Graph:
+ \-EntityResultImpl [lk.ijse.posspringbackend.entity.impl.CustomerEntity(11)]
+ |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity(11).address]
+ |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity(11).contact]
+ |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity(11).name]
+ |  \-DelayedCollectionFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity(11).orders]
+
+20:01:02.111 [http-nio-8080-exec-3] DEBUG org.hibernate.orm.sql.ast.tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (ce1 : lk.ijse.posspringbackend.entity.impl.CustomerEntity(11)) {
+          primaryTableReference : customers as ce1_0
+        }
+      }
+    }
+
+20:01:02.112 [http-nio-8080-exec-3] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+20:01:02.112 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - select ce1_0.customerId,ce1_0.address,ce1_0.contact,ce1_0.name from customers ce1_0
+20:01:02.116 [http-nio-8080-exec-3] DEBUG org.hibernate.orm.results - Initializer list:
+	  lk.ijse.posspringbackend.entity.impl.CustomerEntity(11).orders -> DelayedCollectionInitializer(lk.ijse.posspringbackend.entity.impl.CustomerEntity(11).orders)@590665538 (PluralAttribute(lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders))
+	  lk.ijse.posspringbackend.entity.impl.CustomerEntity(11) -> EntityJoinedFetchInitializer(lk.ijse.posspringbackend.entity.impl.CustomerEntity(11))@1662594720 (SingleTableEntityPersister(lk.ijse.posspringbackend.entity.impl.CustomerEntity))
+
+20:01:02.118 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@53500009]
+20:01:02.119 [http-nio-8080-exec-1] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+20:01:02.119 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - SELECT orderId FROM orders ORDER BY orderId DESC LIMIT 1
+20:01:02.120 [http-nio-8080-exec-1] DEBUG org.hibernate.orm.results - Initializer list is empty
+20:01:02.121 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+20:01:02.121 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(105401978<open>)]
+20:01:02.121 [http-nio-8080-exec-1] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:01:02.122 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@7f9ea7d4]
+20:01:02.124 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@4d5a1c5e]
+20:01:02.124 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(2066635350<open>)] for JPA transaction
+20:01:02.124 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:01:02.122 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(105401978<open>)] after transaction
+20:01:02.125 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+20:01:02.124 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1203531715<open>)] for JPA transaction
+20:01:02.125 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:01:02.125 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1468831044<open>)]
+20:01:02.125 [http-nio-8080-exec-3] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:01:02.125 [http-nio-8080-exec-3] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:01:02.125 [http-nio-8080-exec-3] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:01:02.126 [http-nio-8080-exec-3] DEBUG o.h.engine.internal.Collections - Collection found: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C001], was: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C001] (uninitialized)
+20:01:02.126 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain]
+20:01:02.126 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing ["ORD003"]
+20:01:02.126 [http-nio-8080-exec-7] DEBUG org.hibernate.orm.sql.ast.create - Created new SQL alias : ie1_0
+20:01:02.127 [http-nio-8080-exec-3] DEBUG o.h.engine.internal.Collections - Collection found: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C002], was: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C002] (uninitialized)
+20:01:02.131 [http-nio-8080-exec-7] DEBUG org.hibernate.orm.sql.ast.create - Registration of TableGroup [StandardTableGroup(lk.ijse.posspringbackend.entity.impl.ItemEntity(13))] with identifierForTableGroup [lk.ijse.posspringbackend.entity.impl.ItemEntity] for NavigablePath [lk.ijse.posspringbackend.entity.impl.ItemEntity] 
+20:01:02.127 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20:01:02.132 [http-nio-8080-exec-3] DEBUG o.h.engine.internal.Collections - Collection found: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C003], was: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C003] (uninitialized)
+20:01:02.132 [http-nio-8080-exec-3] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 3 objects
+20:01:02.132 [http-nio-8080-exec-3] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 3 collections
+20:01:02.132 [http-nio-8080-exec-3] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:01:02.132 [http-nio-8080-exec-3] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.CustomerEntity{address=Bandaragama, contact=0713686845, customerId=C003, name=Malithi Meth, orders=<uninitialized>}
+20:01:02.127 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.ast.create - Created new SQL alias : ce1_0
+20:01:02.133 [http-nio-8080-exec-3] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.CustomerEntity{address=Panadura, contact=0713686811, customerId=C001, name=Dimagi, orders=<uninitialized>}
+20:01:02.133 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.ast.create - Registration of TableGroup [StandardTableGroup(lk.ijse.posspringbackend.entity.impl.CustomerEntity(12))] with identifierForTableGroup [lk.ijse.posspringbackend.entity.impl.CustomerEntity] for NavigablePath [lk.ijse.posspringbackend.entity.impl.CustomerEntity] 
+20:01:02.133 [http-nio-8080-exec-3] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.CustomerEntity{address=Wakada, contact=0713686812, customerId=C002, name=Warsha, orders=<uninitialized>}
+20:01:02.133 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.results.graph.AST - DomainResult Graph:
+ \-EntityResultImpl [lk.ijse.posspringbackend.entity.impl.CustomerEntity(12)]
+ |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity(12).address]
+ |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity(12).contact]
+ |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity(12).name]
+ |  \-DelayedCollectionFetch [lk.ijse.posspringbackend.entity.impl.CustomerEntity(12).orders]
+
+20:01:02.133 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.ast.tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (ce1 : lk.ijse.posspringbackend.entity.impl.CustomerEntity(12)) {
+          primaryTableReference : customers as ce1_0
+        }
+      }
+    }
+
+20:01:02.134 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+20:01:02.134 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - select ce1_0.customerId,ce1_0.address,ce1_0.contact,ce1_0.name from customers ce1_0
+20:01:02.134 [http-nio-8080-exec-7] DEBUG org.hibernate.orm.results.graph.AST - DomainResult Graph:
+ \-EntityResultImpl [lk.ijse.posspringbackend.entity.impl.ItemEntity(13)]
+ |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.ItemEntity(13).description]
+ |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.ItemEntity(13).qtyOnHand]
+ |  \-BasicFetch [lk.ijse.posspringbackend.entity.impl.ItemEntity(13).unitPrice]
+
+20:01:02.135 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@6dfb92a7]
+20:01:02.135 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(1468831044<open>)] after transaction
+20:01:02.135 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.results - Initializer list:
+	  lk.ijse.posspringbackend.entity.impl.CustomerEntity(12).orders -> DelayedCollectionInitializer(lk.ijse.posspringbackend.entity.impl.CustomerEntity(12).orders)@469031384 (PluralAttribute(lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders))
+	  lk.ijse.posspringbackend.entity.impl.CustomerEntity(12) -> EntityJoinedFetchInitializer(lk.ijse.posspringbackend.entity.impl.CustomerEntity(12))@361909237 (SingleTableEntityPersister(lk.ijse.posspringbackend.entity.impl.CustomerEntity))
+
+20:01:02.137 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1737154101<open>)] for JPA transaction
+20:01:02.137 [http-nio-8080-exec-7] DEBUG org.hibernate.orm.sql.ast.tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (ie1 : lk.ijse.posspringbackend.entity.impl.ItemEntity(13)) {
+          primaryTableReference : items as ie1_0
+        }
+      }
+    }
+
+20:01:02.137 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:01:02.138 [http-nio-8080-exec-6] DEBUG org.hibernate.orm.sql.ast.create - Created new SQL alias : ie1_0
+20:01:02.138 [http-nio-8080-exec-6] DEBUG org.hibernate.orm.sql.ast.create - Registration of TableGroup [StandardTableGroup(lk.ijse.posspringbackend.entity.impl.ItemEntity(14))] with identifierForTableGroup [lk.ijse.posspringbackend.entity.impl.ItemEntity] for NavigablePath [lk.ijse.posspringbackend.entity.impl.ItemEntity] 
+20:01:02.138 [http-nio-8080-exec-7] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+20:01:02.138 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/javascript, */*;q=0.01] and supported [application/json]
+20:01:02.139 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+20:01:02.139 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(2066635350<open>)]
+20:01:02.139 [http-nio-8080-exec-5] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:01:02.139 [http-nio-8080-exec-5] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:01:02.139 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[CustomerDTO(customerId=C001, name=Dimagi, address=Panadura, contact=0713686811), CustomerDTO(custom (truncated)...]
+20:01:02.139 [http-nio-8080-exec-5] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:01:02.139 [http-nio-8080-exec-6] DEBUG org.hibernate.orm.results.graph.AST - DomainResult Graph:
+ \-EntityResultImpl [lk.ijse.posspringbackend.entity.impl.ItemEntity(14)]
+ |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.ItemEntity(14).description]
+ |  +-BasicFetch [lk.ijse.posspringbackend.entity.impl.ItemEntity(14).qtyOnHand]
+ |  \-BasicFetch [lk.ijse.posspringbackend.entity.impl.ItemEntity(14).unitPrice]
+
+20:01:02.141 [http-nio-8080-exec-6] DEBUG org.hibernate.orm.sql.ast.tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (ie1 : lk.ijse.posspringbackend.entity.impl.ItemEntity(14)) {
+          primaryTableReference : items as ie1_0
+        }
+      }
+    }
+
+20:01:02.141 [http-nio-8080-exec-5] DEBUG o.h.engine.internal.Collections - Collection found: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C001], was: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C001] (uninitialized)
+20:01:02.140 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20:01:02.141 [http-nio-8080-exec-6] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+20:01:02.142 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - select ie1_0.itemId,ie1_0.description,ie1_0.qtyOnHand,ie1_0.unitPrice from items ie1_0
+20:01:02.142 [http-nio-8080-exec-5] DEBUG o.h.engine.internal.Collections - Collection found: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C002], was: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C002] (uninitialized)
+20:01:02.142 [http-nio-8080-exec-5] DEBUG o.h.engine.internal.Collections - Collection found: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C003], was: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C003] (uninitialized)
+20:01:02.142 [http-nio-8080-exec-5] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 3 objects
+20:01:02.142 [http-nio-8080-exec-5] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 3 collections
+20:01:02.142 [http-nio-8080-exec-5] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:01:02.142 [http-nio-8080-exec-5] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.CustomerEntity{address=Bandaragama, contact=0713686845, customerId=C003, name=Malithi Meth, orders=<uninitialized>}
+20:01:02.142 [http-nio-8080-exec-5] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.CustomerEntity{address=Panadura, contact=0713686811, customerId=C001, name=Dimagi, orders=<uninitialized>}
+20:01:02.142 [http-nio-8080-exec-5] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.CustomerEntity{address=Wakada, contact=0713686812, customerId=C002, name=Warsha, orders=<uninitialized>}
+20:01:02.139 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - select ie1_0.itemId,ie1_0.description,ie1_0.qtyOnHand,ie1_0.unitPrice from items ie1_0
+20:01:02.143 [http-nio-8080-exec-6] DEBUG org.hibernate.orm.results - Initializer list:
+	  lk.ijse.posspringbackend.entity.impl.ItemEntity(14) -> EntityJoinedFetchInitializer(lk.ijse.posspringbackend.entity.impl.ItemEntity(14))@593064747 (SingleTableEntityPersister(lk.ijse.posspringbackend.entity.impl.ItemEntity))
+
+20:01:02.144 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(2066635350<open>)] after transaction
+20:01:02.145 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+20:01:02.145 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1737154101<open>)]
+20:01:02.145 [http-nio-8080-exec-6] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:01:02.145 [http-nio-8080-exec-6] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:01:02.145 [http-nio-8080-exec-6] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:01:02.145 [http-nio-8080-exec-6] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
+20:01:02.145 [http-nio-8080-exec-6] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:01:02.145 [http-nio-8080-exec-6] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:01:02.145 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json]
+20:01:02.146 [http-nio-8080-exec-6] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.ItemEntity{unitPrice=20.0, itemId=I002, description=pen, qtyOnHand=177}
+20:01:02.146 [http-nio-8080-exec-6] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.ItemEntity{unitPrice=30.0, itemId=I001, description=Bun, qtyOnHand=119}
+20:01:02.146 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[CustomerDTO(customerId=C001, name=Dimagi, address=Panadura, contact=0713686811), CustomerDTO(custom (truncated)...]
+20:01:02.147 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20:01:02.147 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(1737154101<open>)] after transaction
+20:01:02.148 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json]
+20:01:02.149 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[ItemDTO(itemId=I001, description=Bun, unitPrice=30.0, qtyOnHand=119), ItemDTO(itemId=I002, descript (truncated)...]
+20:01:02.150 [http-nio-8080-exec-7] DEBUG org.hibernate.orm.results - Initializer list:
+	  lk.ijse.posspringbackend.entity.impl.ItemEntity(13) -> EntityJoinedFetchInitializer(lk.ijse.posspringbackend.entity.impl.ItemEntity(13))@719753238 (SingleTableEntityPersister(lk.ijse.posspringbackend.entity.impl.ItemEntity))
+
+20:01:02.155 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+20:01:02.160 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1203531715<open>)]
+20:01:02.161 [http-nio-8080-exec-7] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:01:02.161 [http-nio-8080-exec-7] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:01:02.162 [http-nio-8080-exec-7] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:01:02.162 [http-nio-8080-exec-7] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
+20:01:02.162 [http-nio-8080-exec-7] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:01:02.163 [http-nio-8080-exec-7] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:01:02.151 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20:01:02.170 [http-nio-8080-exec-7] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.ItemEntity{unitPrice=20.0, itemId=I002, description=pen, qtyOnHand=177}
+20:01:02.170 [http-nio-8080-exec-7] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.ItemEntity{unitPrice=30.0, itemId=I001, description=Bun, qtyOnHand=119}
+20:01:02.173 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(1203531715<open>)] after transaction
+20:01:02.174 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/javascript, */*;q=0.01] and supported [application/json]
+20:01:02.174 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[ItemDTO(itemId=I001, description=Bun, unitPrice=30.0, qtyOnHand=119), ItemDTO(itemId=I002, descript (truncated)...]
+20:01:02.176 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20:01:14.540 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/possystem/api/v1/customer/C003", parameters={}
+20:01:14.541 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.CustomerController#getSelectedCustomer(String)
+20:01:14.545 [http-nio-8080-exec-9] INFO  l.i.p.controller.CustomerController - Retrieving customer with ID: C003
+20:01:14.545 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.CustomerServiceImpl.getCustomer]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+20:01:14.545 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(357489413<open>)] for JPA transaction
+20:01:14.546 [http-nio-8080-exec-9] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:01:14.546 [http-nio-8080-exec-9] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:01:14.546 [http-nio-8080-exec-9] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+20:01:14.568 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@3a98bb28]
+20:01:14.572 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(357489413<open>)] for JPA transaction
+20:01:14.572 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:01:14.574 [http-nio-8080-exec-9] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+20:01:14.574 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - select count(*) from customers ce1_0 where ce1_0.customerId=?
+20:01:14.579 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(357489413<open>)] for JPA transaction
+20:01:14.579 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:01:14.579 [http-nio-8080-exec-9] DEBUG org.hibernate.internal.SessionImpl - Initializing proxy: [lk.ijse.posspringbackend.entity.impl.CustomerEntity#C003]
+20:01:14.579 [http-nio-8080-exec-9] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+20:01:14.580 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - select ce1_0.customerId,ce1_0.address,ce1_0.contact,ce1_0.name from customers ce1_0 where ce1_0.customerId=?
+20:01:14.581 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+20:01:14.581 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(357489413<open>)]
+20:01:14.582 [http-nio-8080-exec-9] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:01:14.582 [http-nio-8080-exec-9] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:01:14.582 [http-nio-8080-exec-9] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:01:14.582 [http-nio-8080-exec-9] DEBUG o.h.engine.internal.Collections - Collection found: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C003], was: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C003] (uninitialized)
+20:01:14.582 [http-nio-8080-exec-9] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+20:01:14.582 [http-nio-8080-exec-9] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
+20:01:14.582 [http-nio-8080-exec-9] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:01:14.582 [http-nio-8080-exec-9] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.CustomerEntity{address=Bandaragama, contact=0713686845, customerId=C003, name=Malithi Meth, orders=<uninitialized>}
+20:01:14.583 [http-nio-8080-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(357489413<open>)] after transaction
+20:01:14.585 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json]
+20:01:14.585 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [SelectedErrorStatus(statusCode=0, statusMessage=Customer found, customerDTO=CustomerDTO(customerId=C (truncated)...]
+20:01:14.586 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20:01:19.979 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/possystem/api/v1/item/I001", parameters={}
+20:01:19.981 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.ItemController#getSelectedItem(String)
+20:01:19.982 [http-nio-8080-exec-2] INFO  l.i.p.controller.ItemController - Retrieving item with ID: I001
+20:01:19.982 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.ItemServiceImpl.getItem]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+20:01:19.982 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(497513925<open>)] for JPA transaction
+20:01:19.982 [http-nio-8080-exec-2] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:01:19.982 [http-nio-8080-exec-2] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:01:19.982 [http-nio-8080-exec-2] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+20:01:20.003 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@7be5dd8b]
+20:01:20.004 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(497513925<open>)] for JPA transaction
+20:01:20.004 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:01:20.004 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+20:01:20.004 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select count(*) from items ie1_0 where ie1_0.itemId=?
+20:01:20.006 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(497513925<open>)] for JPA transaction
+20:01:20.007 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:01:20.007 [http-nio-8080-exec-2] DEBUG org.hibernate.internal.SessionImpl - Initializing proxy: [lk.ijse.posspringbackend.entity.impl.ItemEntity#I001]
+20:01:20.007 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+20:01:20.007 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select ie1_0.itemId,ie1_0.description,ie1_0.qtyOnHand,ie1_0.unitPrice from items ie1_0 where ie1_0.itemId=?
+20:01:20.009 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+20:01:20.009 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(497513925<open>)]
+20:01:20.009 [http-nio-8080-exec-2] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:01:20.009 [http-nio-8080-exec-2] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:01:20.009 [http-nio-8080-exec-2] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:01:20.010 [http-nio-8080-exec-2] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+20:01:20.010 [http-nio-8080-exec-2] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:01:20.010 [http-nio-8080-exec-2] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:01:20.010 [http-nio-8080-exec-2] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.ItemEntity{unitPrice=30.0, itemId=I001, description=Bun, qtyOnHand=119}
+20:01:20.011 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(497513925<open>)] after transaction
+20:01:20.011 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json]
+20:01:20.012 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [SelectedErrorStatus(statusCode=0, statusMessage=Item found, customerDTO=null, itemDTO=ItemDTO(itemId (truncated)...]
+20:01:20.013 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20:01:25.716 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/possystem/api/v1/item/I001", parameters={}
+20:01:25.717 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.ItemController#getSelectedItem(String)
+20:01:25.718 [http-nio-8080-exec-3] INFO  l.i.p.controller.ItemController - Retrieving item with ID: I001
+20:01:25.719 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.ItemServiceImpl.getItem]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+20:01:25.719 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(1272092362<open>)] for JPA transaction
+20:01:25.719 [http-nio-8080-exec-3] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:01:25.719 [http-nio-8080-exec-3] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:01:25.719 [http-nio-8080-exec-3] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+20:01:25.742 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@6492e6da]
+20:01:25.742 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1272092362<open>)] for JPA transaction
+20:01:25.742 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:01:25.744 [http-nio-8080-exec-3] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+20:01:25.744 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - select count(*) from items ie1_0 where ie1_0.itemId=?
+20:01:25.748 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1272092362<open>)] for JPA transaction
+20:01:25.748 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:01:25.749 [http-nio-8080-exec-3] DEBUG org.hibernate.internal.SessionImpl - Initializing proxy: [lk.ijse.posspringbackend.entity.impl.ItemEntity#I001]
+20:01:25.749 [http-nio-8080-exec-3] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+20:01:25.749 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - select ie1_0.itemId,ie1_0.description,ie1_0.qtyOnHand,ie1_0.unitPrice from items ie1_0 where ie1_0.itemId=?
+20:01:25.752 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+20:01:25.752 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1272092362<open>)]
+20:01:25.753 [http-nio-8080-exec-3] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:01:25.753 [http-nio-8080-exec-3] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:01:25.753 [http-nio-8080-exec-3] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:01:25.753 [http-nio-8080-exec-3] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+20:01:25.753 [http-nio-8080-exec-3] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:01:25.753 [http-nio-8080-exec-3] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:01:25.753 [http-nio-8080-exec-3] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.ItemEntity{unitPrice=30.0, itemId=I001, description=Bun, qtyOnHand=119}
+20:01:25.755 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(1272092362<open>)] after transaction
+20:01:25.756 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json]
+20:01:25.757 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [SelectedErrorStatus(statusCode=0, statusMessage=Item found, customerDTO=null, itemDTO=ItemDTO(itemId (truncated)...]
+20:01:25.759 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20:01:25.788 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - OPTIONS "/possystem/api/v1/item/I001", parameters={}
+20:01:25.789 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.ItemController#updateItem(ItemDTO, String)
+20:01:25.790 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20:01:25.798 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - PUT "/possystem/api/v1/item/I001", parameters={}
+20:01:25.801 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.ItemController#updateItem(ItemDTO, String)
+20:01:25.804 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [ItemDTO(itemId=I001, description=Bun, unitPrice=30.0, qtyOnHand=118)]
+20:01:25.805 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.ItemServiceImpl.updateItem]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+20:01:25.807 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(1082828658<open>)] for JPA transaction
+20:01:25.810 [http-nio-8080-exec-5] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:01:25.810 [http-nio-8080-exec-5] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:01:25.810 [http-nio-8080-exec-5] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+20:01:25.826 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@5eac6299]
+20:01:25.827 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1082828658<open>)] for JPA transaction
+20:01:25.827 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:01:25.828 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+20:01:25.828 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - select ie1_0.itemId,ie1_0.description,ie1_0.qtyOnHand,ie1_0.unitPrice from items ie1_0 where ie1_0.itemId=?
+20:01:25.833 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+20:01:25.833 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1082828658<open>)]
+20:01:25.833 [http-nio-8080-exec-5] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:01:25.833 [http-nio-8080-exec-5] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:01:25.833 [http-nio-8080-exec-5] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:01:25.833 [http-nio-8080-exec-5] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
+20:01:25.833 [http-nio-8080-exec-5] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:01:25.833 [http-nio-8080-exec-5] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:01:25.834 [http-nio-8080-exec-5] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.ItemEntity{unitPrice=30.0, itemId=I001, description=Bun, qtyOnHand=118}
+20:01:25.834 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - update items set description=?,qtyOnHand=?,unitPrice=? where itemId=?
+20:01:25.850 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(1082828658<open>)] after transaction
+20:01:25.851 [http-nio-8080-exec-5] INFO  l.i.p.controller.ItemController - Updated item with ID: I001
+20:01:25.852 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+20:01:25.852 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Nothing to write: null body
+20:01:25.852 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 204 NO_CONTENT
+20:01:33.057 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/possystem/api/v1/item/I002", parameters={}
+20:01:33.058 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.ItemController#getSelectedItem(String)
+20:01:33.058 [http-nio-8080-exec-6] INFO  l.i.p.controller.ItemController - Retrieving item with ID: I002
+20:01:33.058 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.ItemServiceImpl.getItem]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+20:01:33.059 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(267514390<open>)] for JPA transaction
+20:01:33.059 [http-nio-8080-exec-6] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:01:33.059 [http-nio-8080-exec-6] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:01:33.059 [http-nio-8080-exec-6] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+20:01:33.082 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@6219513a]
+20:01:33.083 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(267514390<open>)] for JPA transaction
+20:01:33.083 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:01:33.084 [http-nio-8080-exec-6] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+20:01:33.084 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - select count(*) from items ie1_0 where ie1_0.itemId=?
+20:01:33.086 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(267514390<open>)] for JPA transaction
+20:01:33.086 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:01:33.086 [http-nio-8080-exec-6] DEBUG org.hibernate.internal.SessionImpl - Initializing proxy: [lk.ijse.posspringbackend.entity.impl.ItemEntity#I002]
+20:01:33.087 [http-nio-8080-exec-6] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+20:01:33.087 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - select ie1_0.itemId,ie1_0.description,ie1_0.qtyOnHand,ie1_0.unitPrice from items ie1_0 where ie1_0.itemId=?
+20:01:33.091 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+20:01:33.091 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(267514390<open>)]
+20:01:33.091 [http-nio-8080-exec-6] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:01:33.091 [http-nio-8080-exec-6] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:01:33.091 [http-nio-8080-exec-6] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:01:33.092 [http-nio-8080-exec-6] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+20:01:33.092 [http-nio-8080-exec-6] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:01:33.092 [http-nio-8080-exec-6] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:01:33.092 [http-nio-8080-exec-6] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.ItemEntity{unitPrice=20.0, itemId=I002, description=pen, qtyOnHand=177}
+20:01:33.093 [http-nio-8080-exec-6] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(267514390<open>)] after transaction
+20:01:33.095 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json]
+20:01:33.095 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [SelectedErrorStatus(statusCode=0, statusMessage=Item found, customerDTO=null, itemDTO=ItemDTO(itemId (truncated)...]
+20:01:33.096 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20:01:38.330 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/possystem/api/v1/item/I002", parameters={}
+20:01:38.332 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.ItemController#getSelectedItem(String)
+20:01:38.333 [http-nio-8080-exec-7] INFO  l.i.p.controller.ItemController - Retrieving item with ID: I002
+20:01:38.333 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.ItemServiceImpl.getItem]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+20:01:38.333 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(489882130<open>)] for JPA transaction
+20:01:38.333 [http-nio-8080-exec-7] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:01:38.334 [http-nio-8080-exec-7] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:01:38.334 [http-nio-8080-exec-7] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+20:01:38.352 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@7978aff3]
+20:01:38.352 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(489882130<open>)] for JPA transaction
+20:01:38.352 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:01:38.353 [http-nio-8080-exec-7] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+20:01:38.353 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - select count(*) from items ie1_0 where ie1_0.itemId=?
+20:01:38.355 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(489882130<open>)] for JPA transaction
+20:01:38.355 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:01:38.356 [http-nio-8080-exec-7] DEBUG org.hibernate.internal.SessionImpl - Initializing proxy: [lk.ijse.posspringbackend.entity.impl.ItemEntity#I002]
+20:01:38.356 [http-nio-8080-exec-7] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+20:01:38.356 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - select ie1_0.itemId,ie1_0.description,ie1_0.qtyOnHand,ie1_0.unitPrice from items ie1_0 where ie1_0.itemId=?
+20:01:38.361 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+20:01:38.361 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(489882130<open>)]
+20:01:38.361 [http-nio-8080-exec-7] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:01:38.362 [http-nio-8080-exec-7] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:01:38.362 [http-nio-8080-exec-7] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:01:38.362 [http-nio-8080-exec-7] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+20:01:38.362 [http-nio-8080-exec-7] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:01:38.362 [http-nio-8080-exec-7] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:01:38.362 [http-nio-8080-exec-7] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.ItemEntity{unitPrice=20.0, itemId=I002, description=pen, qtyOnHand=177}
+20:01:38.363 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(489882130<open>)] after transaction
+20:01:38.365 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json]
+20:01:38.365 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [SelectedErrorStatus(statusCode=0, statusMessage=Item found, customerDTO=null, itemDTO=ItemDTO(itemId (truncated)...]
+20:01:38.366 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20:01:38.375 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - OPTIONS "/possystem/api/v1/item/I002", parameters={}
+20:01:38.376 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.ItemController#updateItem(ItemDTO, String)
+20:01:38.376 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20:01:38.380 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - PUT "/possystem/api/v1/item/I002", parameters={}
+20:01:38.381 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.ItemController#updateItem(ItemDTO, String)
+20:01:38.382 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [ItemDTO(itemId=I002, description=pen, unitPrice=20.0, qtyOnHand=174)]
+20:01:38.382 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.ItemServiceImpl.updateItem]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+20:01:38.383 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(1162896712<open>)] for JPA transaction
+20:01:38.383 [http-nio-8080-exec-2] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:01:38.383 [http-nio-8080-exec-2] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:01:38.383 [http-nio-8080-exec-2] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+20:01:38.404 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@3419b60b]
+20:01:38.406 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1162896712<open>)] for JPA transaction
+20:01:38.406 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:01:38.408 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+20:01:38.409 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select ie1_0.itemId,ie1_0.description,ie1_0.qtyOnHand,ie1_0.unitPrice from items ie1_0 where ie1_0.itemId=?
+20:01:38.413 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+20:01:38.414 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1162896712<open>)]
+20:01:38.415 [http-nio-8080-exec-2] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:01:38.415 [http-nio-8080-exec-2] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:01:38.415 [http-nio-8080-exec-2] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:01:38.416 [http-nio-8080-exec-2] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
+20:01:38.416 [http-nio-8080-exec-2] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:01:38.416 [http-nio-8080-exec-2] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:01:38.416 [http-nio-8080-exec-2] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.ItemEntity{unitPrice=20.0, itemId=I002, description=pen, qtyOnHand=174}
+20:01:38.417 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - update items set description=?,qtyOnHand=?,unitPrice=? where itemId=?
+20:01:38.435 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(1162896712<open>)] after transaction
+20:01:38.436 [http-nio-8080-exec-2] INFO  l.i.p.controller.ItemController - Updated item with ID: I002
+20:01:38.437 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+20:01:38.437 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Nothing to write: null body
+20:01:38.437 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 204 NO_CONTENT
+20:01:51.945 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/possystem/api/v1/item/I002", parameters={}
+20:01:51.946 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.ItemController#getSelectedItem(String)
+20:01:51.947 [http-nio-8080-exec-8] INFO  l.i.p.controller.ItemController - Retrieving item with ID: I002
+20:01:51.948 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.ItemServiceImpl.getItem]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+20:01:51.948 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(1309382472<open>)] for JPA transaction
+20:01:51.948 [http-nio-8080-exec-8] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:01:51.948 [http-nio-8080-exec-8] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:01:51.948 [http-nio-8080-exec-8] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+20:01:51.972 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@159cd953]
+20:01:51.972 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1309382472<open>)] for JPA transaction
+20:01:51.973 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:01:51.974 [http-nio-8080-exec-8] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+20:01:51.975 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - select count(*) from items ie1_0 where ie1_0.itemId=?
+20:01:51.977 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1309382472<open>)] for JPA transaction
+20:01:51.977 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:01:51.978 [http-nio-8080-exec-8] DEBUG org.hibernate.internal.SessionImpl - Initializing proxy: [lk.ijse.posspringbackend.entity.impl.ItemEntity#I002]
+20:01:51.978 [http-nio-8080-exec-8] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+20:01:51.979 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - select ie1_0.itemId,ie1_0.description,ie1_0.qtyOnHand,ie1_0.unitPrice from items ie1_0 where ie1_0.itemId=?
+20:01:51.982 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+20:01:51.982 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1309382472<open>)]
+20:01:51.982 [http-nio-8080-exec-8] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:01:51.982 [http-nio-8080-exec-8] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:01:51.984 [http-nio-8080-exec-8] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:01:51.985 [http-nio-8080-exec-8] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+20:01:51.985 [http-nio-8080-exec-8] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:01:51.985 [http-nio-8080-exec-8] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:01:51.986 [http-nio-8080-exec-8] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.ItemEntity{unitPrice=20.0, itemId=I002, description=pen, qtyOnHand=174}
+20:01:51.987 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(1309382472<open>)] after transaction
+20:01:51.989 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json]
+20:01:51.990 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [SelectedErrorStatus(statusCode=0, statusMessage=Item found, customerDTO=null, itemDTO=ItemDTO(itemId (truncated)...]
+20:01:51.992 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20:01:52.002 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - PUT "/possystem/api/v1/item/I002", parameters={}
+20:01:52.003 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.ItemController#updateItem(ItemDTO, String)
+20:01:52.004 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [ItemDTO(itemId=I002, description=pen, unitPrice=20.0, qtyOnHand=177)]
+20:01:52.005 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.ItemServiceImpl.updateItem]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+20:01:52.007 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(920157442<open>)] for JPA transaction
+20:01:52.008 [http-nio-8080-exec-4] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:01:52.008 [http-nio-8080-exec-4] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:01:52.008 [http-nio-8080-exec-4] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+20:01:52.035 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@c5ba14a]
+20:01:52.036 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(920157442<open>)] for JPA transaction
+20:01:52.036 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:01:52.036 [http-nio-8080-exec-4] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+20:01:52.036 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - select ie1_0.itemId,ie1_0.description,ie1_0.qtyOnHand,ie1_0.unitPrice from items ie1_0 where ie1_0.itemId=?
+20:01:52.039 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+20:01:52.039 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(920157442<open>)]
+20:01:52.039 [http-nio-8080-exec-4] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:01:52.039 [http-nio-8080-exec-4] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:01:52.040 [http-nio-8080-exec-4] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:01:52.040 [http-nio-8080-exec-4] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
+20:01:52.040 [http-nio-8080-exec-4] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:01:52.040 [http-nio-8080-exec-4] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:01:52.040 [http-nio-8080-exec-4] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.ItemEntity{unitPrice=20.0, itemId=I002, description=pen, qtyOnHand=177}
+20:01:52.041 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - update items set description=?,qtyOnHand=?,unitPrice=? where itemId=?
+20:01:52.058 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(920157442<open>)] after transaction
+20:01:52.059 [http-nio-8080-exec-4] INFO  l.i.p.controller.ItemController - Updated item with ID: I002
+20:01:52.059 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+20:01:52.060 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Nothing to write: null body
+20:01:52.060 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 204 NO_CONTENT
+20:01:58.207 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/possystem/api/v1/item/I001", parameters={}
+20:01:58.208 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.ItemController#getSelectedItem(String)
+20:01:58.209 [http-nio-8080-exec-1] INFO  l.i.p.controller.ItemController - Retrieving item with ID: I001
+20:01:58.210 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.ItemServiceImpl.getItem]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+20:01:58.210 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(568027088<open>)] for JPA transaction
+20:01:58.210 [http-nio-8080-exec-1] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:01:58.210 [http-nio-8080-exec-1] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:01:58.210 [http-nio-8080-exec-1] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+20:01:58.237 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@28e33ca0]
+20:01:58.237 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(568027088<open>)] for JPA transaction
+20:01:58.237 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:01:58.238 [http-nio-8080-exec-1] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+20:01:58.238 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - select count(*) from items ie1_0 where ie1_0.itemId=?
+20:01:58.240 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(568027088<open>)] for JPA transaction
+20:01:58.240 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:01:58.241 [http-nio-8080-exec-1] DEBUG org.hibernate.internal.SessionImpl - Initializing proxy: [lk.ijse.posspringbackend.entity.impl.ItemEntity#I001]
+20:01:58.241 [http-nio-8080-exec-1] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+20:01:58.241 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - select ie1_0.itemId,ie1_0.description,ie1_0.qtyOnHand,ie1_0.unitPrice from items ie1_0 where ie1_0.itemId=?
+20:01:58.244 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+20:01:58.244 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(568027088<open>)]
+20:01:58.244 [http-nio-8080-exec-1] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:01:58.244 [http-nio-8080-exec-1] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:01:58.244 [http-nio-8080-exec-1] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:01:58.245 [http-nio-8080-exec-1] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+20:01:58.245 [http-nio-8080-exec-1] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:01:58.245 [http-nio-8080-exec-1] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:01:58.245 [http-nio-8080-exec-1] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.ItemEntity{unitPrice=30.0, itemId=I001, description=Bun, qtyOnHand=118}
+20:01:58.246 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(568027088<open>)] after transaction
+20:01:58.247 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json]
+20:01:58.247 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [SelectedErrorStatus(statusCode=0, statusMessage=Item found, customerDTO=null, itemDTO=ItemDTO(itemId (truncated)...]
+20:01:58.248 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20:02:00.504 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/possystem/api/v1/item/I002", parameters={}
+20:02:00.505 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.ItemController#getSelectedItem(String)
+20:02:00.506 [http-nio-8080-exec-10] INFO  l.i.p.controller.ItemController - Retrieving item with ID: I002
+20:02:00.507 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.ItemServiceImpl.getItem]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+20:02:00.507 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(619146569<open>)] for JPA transaction
+20:02:00.507 [http-nio-8080-exec-10] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:02:00.507 [http-nio-8080-exec-10] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:02:00.507 [http-nio-8080-exec-10] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+20:02:00.524 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@4ed08c2e]
+20:02:00.524 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(619146569<open>)] for JPA transaction
+20:02:00.524 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:02:00.526 [http-nio-8080-exec-10] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+20:02:00.526 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - select count(*) from items ie1_0 where ie1_0.itemId=?
+20:02:00.528 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(619146569<open>)] for JPA transaction
+20:02:00.528 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:02:00.529 [http-nio-8080-exec-10] DEBUG org.hibernate.internal.SessionImpl - Initializing proxy: [lk.ijse.posspringbackend.entity.impl.ItemEntity#I002]
+20:02:00.530 [http-nio-8080-exec-10] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+20:02:00.531 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - select ie1_0.itemId,ie1_0.description,ie1_0.qtyOnHand,ie1_0.unitPrice from items ie1_0 where ie1_0.itemId=?
+20:02:00.533 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+20:02:00.533 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(619146569<open>)]
+20:02:00.533 [http-nio-8080-exec-10] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:02:00.533 [http-nio-8080-exec-10] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:02:00.533 [http-nio-8080-exec-10] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:02:00.534 [http-nio-8080-exec-10] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+20:02:00.534 [http-nio-8080-exec-10] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:02:00.534 [http-nio-8080-exec-10] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:02:00.534 [http-nio-8080-exec-10] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.ItemEntity{unitPrice=20.0, itemId=I002, description=pen, qtyOnHand=177}
+20:02:00.535 [http-nio-8080-exec-10] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(619146569<open>)] after transaction
+20:02:00.536 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json]
+20:02:00.537 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [SelectedErrorStatus(statusCode=0, statusMessage=Item found, customerDTO=null, itemDTO=ItemDTO(itemId (truncated)...]
+20:02:00.543 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20:02:05.824 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/possystem/api/v1/item/I002", parameters={}
+20:02:05.825 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.ItemController#getSelectedItem(String)
+20:02:05.825 [http-nio-8080-exec-3] INFO  l.i.p.controller.ItemController - Retrieving item with ID: I002
+20:02:05.826 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.ItemServiceImpl.getItem]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+20:02:05.826 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(1552202337<open>)] for JPA transaction
+20:02:05.826 [http-nio-8080-exec-3] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:02:05.826 [http-nio-8080-exec-3] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:02:05.826 [http-nio-8080-exec-3] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+20:02:05.841 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@7eb18682]
+20:02:05.841 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1552202337<open>)] for JPA transaction
+20:02:05.841 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:02:05.842 [http-nio-8080-exec-3] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+20:02:05.842 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - select count(*) from items ie1_0 where ie1_0.itemId=?
+20:02:05.844 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1552202337<open>)] for JPA transaction
+20:02:05.844 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:02:05.844 [http-nio-8080-exec-3] DEBUG org.hibernate.internal.SessionImpl - Initializing proxy: [lk.ijse.posspringbackend.entity.impl.ItemEntity#I002]
+20:02:05.844 [http-nio-8080-exec-3] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+20:02:05.844 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - select ie1_0.itemId,ie1_0.description,ie1_0.qtyOnHand,ie1_0.unitPrice from items ie1_0 where ie1_0.itemId=?
+20:02:05.847 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+20:02:05.847 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1552202337<open>)]
+20:02:05.847 [http-nio-8080-exec-3] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:02:05.848 [http-nio-8080-exec-3] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:02:05.848 [http-nio-8080-exec-3] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:02:05.849 [http-nio-8080-exec-3] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+20:02:05.849 [http-nio-8080-exec-3] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:02:05.849 [http-nio-8080-exec-3] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:02:05.849 [http-nio-8080-exec-3] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.ItemEntity{unitPrice=20.0, itemId=I002, description=pen, qtyOnHand=177}
+20:02:05.851 [http-nio-8080-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(1552202337<open>)] after transaction
+20:02:05.852 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json]
+20:02:05.852 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [SelectedErrorStatus(statusCode=0, statusMessage=Item found, customerDTO=null, itemDTO=ItemDTO(itemId (truncated)...]
+20:02:05.853 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20:02:05.860 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - PUT "/possystem/api/v1/item/I002", parameters={}
+20:02:05.861 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.ItemController#updateItem(ItemDTO, String)
+20:02:05.865 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [ItemDTO(itemId=I002, description=pen, unitPrice=20.0, qtyOnHand=174)]
+20:02:05.865 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.ItemServiceImpl.updateItem]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+20:02:05.866 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(234362830<open>)] for JPA transaction
+20:02:05.866 [http-nio-8080-exec-5] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:02:05.866 [http-nio-8080-exec-5] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:02:05.866 [http-nio-8080-exec-5] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+20:02:05.885 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@676dbad6]
+20:02:05.885 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(234362830<open>)] for JPA transaction
+20:02:05.886 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:02:05.887 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+20:02:05.887 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - select ie1_0.itemId,ie1_0.description,ie1_0.qtyOnHand,ie1_0.unitPrice from items ie1_0 where ie1_0.itemId=?
+20:02:05.889 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+20:02:05.889 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(234362830<open>)]
+20:02:05.890 [http-nio-8080-exec-5] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:02:05.890 [http-nio-8080-exec-5] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:02:05.890 [http-nio-8080-exec-5] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:02:05.890 [http-nio-8080-exec-5] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
+20:02:05.890 [http-nio-8080-exec-5] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:02:05.890 [http-nio-8080-exec-5] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:02:05.890 [http-nio-8080-exec-5] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.ItemEntity{unitPrice=20.0, itemId=I002, description=pen, qtyOnHand=174}
+20:02:05.891 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - update items set description=?,qtyOnHand=?,unitPrice=? where itemId=?
+20:02:05.910 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(234362830<open>)] after transaction
+20:02:05.911 [http-nio-8080-exec-5] INFO  l.i.p.controller.ItemController - Updated item with ID: I002
+20:02:05.911 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+20:02:05.911 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Nothing to write: null body
+20:02:05.912 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 204 NO_CONTENT
+20:02:15.444 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - OPTIONS "/possystem/api/v1/order", parameters={}
+20:02:15.445 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.OrderController#saveOrder(OrderDTO)
+20:02:15.447 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20:02:15.452 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - POST "/possystem/api/v1/order", parameters={}
+20:02:15.454 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.OrderController#saveOrder(OrderDTO)
+20:02:15.456 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [OrderDTO(orderId=ORD003, customerId=C003, orderDate=null, total=90.0, discount=2.0, newTotal=88.2, p (truncated)...]
+20:02:15.456 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.OrderServiceImpl.saveOrder]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+20:02:15.456 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(877342900<open>)] for JPA transaction
+20:02:15.456 [http-nio-8080-exec-7] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:02:15.456 [http-nio-8080-exec-7] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:02:15.456 [http-nio-8080-exec-7] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+20:02:15.481 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@71c6e16d]
+20:02:15.482 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(877342900<open>)] for JPA transaction
+20:02:15.483 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:02:15.483 [http-nio-8080-exec-7] DEBUG o.h.j.i.PersistenceUnitUtilImpl - jakarta.persistence.PersistenceUnitUtil.getIdentifier is only intended to work with enhanced entities (although Hibernate also adapts this support to its proxies); however the passed entity was not enhanced (nor a proxy).. may not be able to read identifier
+20:02:15.484 [http-nio-8080-exec-7] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+20:02:15.484 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - select oe1_0.orderId,oe1_0.balance,c1_0.customerId,c1_0.address,c1_0.contact,c1_0.name,oe1_0.discount,oe1_0.newTotal,oe1_0.orderDate,oe1_0.paidAmount,oe1_0.total,od1_0.order_id,od1_0.id,i1_0.itemId,i1_0.description,i1_0.qtyOnHand,i1_0.unitPrice,od1_0.qty,od1_0.total,od1_0.unitPrice from orders oe1_0 left join customers c1_0 on c1_0.customerId=oe1_0.customer_id left join order_details od1_0 on oe1_0.orderId=od1_0.order_id left join items i1_0 on i1_0.itemId=od1_0.item_id where oe1_0.orderId=?
+20:02:15.486 [http-nio-8080-exec-7] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+20:02:15.486 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - select ce1_0.customerId,ce1_0.address,ce1_0.contact,ce1_0.name from customers ce1_0 where ce1_0.customerId=?
+20:02:15.488 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+20:02:15.488 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(877342900<open>)]
+20:02:15.488 [http-nio-8080-exec-7] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:02:15.488 [http-nio-8080-exec-7] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:02:15.488 [http-nio-8080-exec-7] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:02:15.489 [http-nio-8080-exec-7] DEBUG o.h.engine.internal.Collections - Collection found: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C003], was: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C003] (uninitialized)
+20:02:15.489 [http-nio-8080-exec-7] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 1 insertions, 0 updates, 0 deletions to 2 objects
+20:02:15.489 [http-nio-8080-exec-7] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
+20:02:15.489 [http-nio-8080-exec-7] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:02:15.489 [http-nio-8080-exec-7] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.CustomerEntity{address=Bandaragama, contact=0713686845, customerId=C003, name=Malithi Meth, orders=<uninitialized>}
+20:02:15.489 [http-nio-8080-exec-7] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.OrderEntity{orderDetails=null, total=90.0, balance=11.8, orderId=ORD003, discount=2.0, orderDate=null, paidAmount=100.0, customer=lk.ijse.posspringbackend.entity.impl.CustomerEntity#C003, newTotal=88.2}
+20:02:15.490 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - insert into orders (balance,customer_id,discount,newTotal,orderDate,paidAmount,total,orderId) values (?,?,?,?,?,?,?,?)
+20:02:15.508 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(877342900<open>)] after transaction
+20:02:15.508 [http-nio-8080-exec-7] INFO  l.i.p.controller.OrderController - Order saved successfully: ORD003
+20:02:15.509 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json]
+20:02:15.509 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Nothing to write: null body
+20:02:15.510 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 201 CREATED
+20:02:15.521 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - OPTIONS "/possystem/api/v1/order-detail", parameters={}
+20:02:15.521 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.OrderDetailController#saveOrderDetail(OrderDetailDTO)
+20:02:15.522 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20:02:15.525 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - OPTIONS "/possystem/api/v1/order-detail", parameters={}
+20:02:15.527 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.OrderDetailController#saveOrderDetail(OrderDetailDTO)
+20:02:15.527 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - POST "/possystem/api/v1/order-detail", parameters={}
+20:02:15.527 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.OrderDetailController#saveOrderDetail(OrderDetailDTO)
+20:02:15.529 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [OrderDetailDTO(id=null, itemId=I001, orderId=ORD003, qty=1, unitPrice=30.0, total=30.0)]
+20:02:15.529 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.OrderDetailServiceImpl.saveOrderDetail]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+20:02:15.530 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(650431126<open>)] for JPA transaction
+20:02:15.530 [http-nio-8080-exec-8] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:02:15.530 [http-nio-8080-exec-8] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:02:15.530 [http-nio-8080-exec-8] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+20:02:15.527 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20:02:15.541 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - POST "/possystem/api/v1/order-detail", parameters={}
+20:02:15.541 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/possystem/api/v1/order/nextId", parameters={}
+20:02:15.541 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.OrderDetailController#saveOrderDetail(OrderDetailDTO)
+20:02:15.542 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to lk.ijse.posspringbackend.controller.OrderController#getNextOrderId()
+20:02:15.543 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.OrderServiceImpl.generateNextOrderId]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+20:02:15.543 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(1125669327<open>)] for JPA transaction
+20:02:15.543 [http-nio-8080-exec-1] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:02:15.543 [http-nio-8080-exec-1] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:02:15.543 [http-nio-8080-exec-1] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+20:02:15.543 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [OrderDetailDTO(id=null, itemId=I002, orderId=ORD003, qty=3, unitPrice=20.0, total=60.0)]
+20:02:15.544 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [lk.ijse.posspringbackend.service.impl.OrderDetailServiceImpl.saveOrderDetail]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+20:02:15.545 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(571166919<open>)] for JPA transaction
+20:02:15.545 [http-nio-8080-exec-4] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+20:02:15.545 [http-nio-8080-exec-4] DEBUG o.h.e.t.internal.TransactionImpl - begin
+20:02:15.545 [http-nio-8080-exec-4] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/PosWithSpringDB?createDatabaseIfNotExist=true]
+20:02:15.564 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@517b9511]
+20:02:15.566 [http-nio-8080-exec-1] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+20:02:15.569 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - SELECT orderId FROM orders ORDER BY orderId DESC LIMIT 1
+20:02:15.572 [http-nio-8080-exec-1] DEBUG org.hibernate.orm.results - Initializer list is empty
+20:02:15.573 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+20:02:15.573 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1125669327<open>)]
+20:02:15.572 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@2c3cc3d4]
+20:02:15.573 [http-nio-8080-exec-1] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:02:15.574 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(650431126<open>)] for JPA transaction
+20:02:15.574 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:02:15.574 [http-nio-8080-exec-8] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+20:02:15.574 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - select oe1_0.orderId,oe1_0.balance,c1_0.customerId,c1_0.address,c1_0.contact,c1_0.name,oe1_0.discount,oe1_0.newTotal,oe1_0.orderDate,oe1_0.paidAmount,oe1_0.total from orders oe1_0 left join customers c1_0 on c1_0.customerId=oe1_0.customer_id where oe1_0.orderId=?
+20:02:15.576 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(1125669327<open>)] after transaction
+20:02:15.578 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@76f6c3c1]
+20:02:15.579 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(571166919<open>)] for JPA transaction
+20:02:15.579 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:02:15.579 [http-nio-8080-exec-4] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+20:02:15.579 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - select oe1_0.orderId,oe1_0.balance,c1_0.customerId,c1_0.address,c1_0.contact,c1_0.name,oe1_0.discount,oe1_0.newTotal,oe1_0.orderDate,oe1_0.paidAmount,oe1_0.total from orders oe1_0 left join customers c1_0 on c1_0.customerId=oe1_0.customer_id where oe1_0.orderId=?
+20:02:15.580 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain]
+20:02:15.580 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing ["ORD004"]
+20:02:15.582 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(650431126<open>)] for JPA transaction
+20:02:15.582 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:02:15.582 [http-nio-8080-exec-8] DEBUG o.h.j.i.PersistenceUnitUtilImpl - jakarta.persistence.PersistenceUnitUtil.getIdentifier is only intended to work with enhanced entities (although Hibernate also adapts this support to its proxies); however the passed entity was not enhanced (nor a proxy).. may not be able to read identifier
+20:02:15.584 [http-nio-8080-exec-8] DEBUG o.hibernate.engine.spi.ActionQueue - Executing identity-insert immediately
+20:02:15.584 [http-nio-8080-exec-8] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+20:02:15.584 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - select null,ie1_0.description,ie1_0.qtyOnHand,ie1_0.unitPrice from items ie1_0 where ie1_0.itemId=?
+20:02:15.587 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - insert into order_details (item_id,order_id,qty,total,unitPrice) values (?,?,?,?,?)
+20:02:15.589 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(571166919<open>)] for JPA transaction
+20:02:15.589 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+20:02:15.589 [http-nio-8080-exec-4] DEBUG o.h.j.i.PersistenceUnitUtilImpl - jakarta.persistence.PersistenceUnitUtil.getIdentifier is only intended to work with enhanced entities (although Hibernate also adapts this support to its proxies); however the passed entity was not enhanced (nor a proxy).. may not be able to read identifier
+20:02:15.589 [http-nio-8080-exec-4] DEBUG o.hibernate.engine.spi.ActionQueue - Executing identity-insert immediately
+20:02:15.589 [http-nio-8080-exec-4] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+20:02:15.590 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - select null,ie1_0.description,ie1_0.qtyOnHand,ie1_0.unitPrice from items ie1_0 where ie1_0.itemId=?
+20:02:15.590 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20:02:15.590 [http-nio-8080-exec-8] DEBUG org.hibernate.orm.results - Initializer list is empty
+20:02:15.591 [http-nio-8080-exec-8] DEBUG o.h.id.IdentifierGeneratorHelper - Extracted generated values [lk.ijse.posspringbackend.entity.impl.OrderDetailEntity]: [Ljava.lang.Object;@6b016bda
+20:02:15.592 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - insert into order_details (item_id,order_id,qty,total,unitPrice) values (?,?,?,?,?)
+20:02:15.593 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+20:02:15.593 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(650431126<open>)]
+20:02:15.593 [http-nio-8080-exec-8] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:02:15.594 [http-nio-8080-exec-8] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:02:15.594 [http-nio-8080-exec-8] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:02:15.595 [http-nio-8080-exec-8] DEBUG o.h.engine.internal.Collections - Collection found: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C003], was: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C003] (uninitialized)
+20:02:15.598 [http-nio-8080-exec-8] DEBUG o.h.engine.internal.Collections - Collection found: [lk.ijse.posspringbackend.entity.impl.OrderEntity.orderDetails#ORD003], was: [lk.ijse.posspringbackend.entity.impl.OrderEntity.orderDetails#ORD003] (uninitialized)
+20:02:15.598 [http-nio-8080-exec-4] DEBUG org.hibernate.orm.results - Initializer list is empty
+20:02:15.599 [http-nio-8080-exec-8] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 3 objects
+20:02:15.600 [http-nio-8080-exec-8] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
+20:02:15.600 [http-nio-8080-exec-8] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:02:15.600 [http-nio-8080-exec-8] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.CustomerEntity{address=Bandaragama, contact=0713686845, customerId=C003, name=Malithi Meth, orders=<uninitialized>}
+20:02:15.600 [http-nio-8080-exec-4] DEBUG o.h.id.IdentifierGeneratorHelper - Extracted generated values [lk.ijse.posspringbackend.entity.impl.OrderDetailEntity]: [Ljava.lang.Object;@6d6db224
+20:02:15.601 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+20:02:15.602 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(571166919<open>)]
+20:02:15.602 [http-nio-8080-exec-4] DEBUG o.h.e.t.internal.TransactionImpl - committing
+20:02:15.602 [http-nio-8080-exec-4] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+20:02:15.603 [http-nio-8080-exec-8] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.OrderEntity{orderDetails=<uninitialized>, total=90.0, balance=11.8, orderId=ORD003, discount=2.0, orderDate=null, paidAmount=100.0, customer=lk.ijse.posspringbackend.entity.impl.CustomerEntity#C003, newTotal=88.2}
+20:02:15.603 [http-nio-8080-exec-8] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.OrderDetailEntity{unitPrice=30.0, item=lk.ijse.posspringbackend.entity.impl.ItemEntity#I001, total=30.0, qty=1, id=3, order=lk.ijse.posspringbackend.entity.impl.OrderEntity#ORD003}
+20:02:15.604 [http-nio-8080-exec-4] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+20:02:15.604 [http-nio-8080-exec-4] DEBUG o.h.engine.internal.Collections - Collection found: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C003], was: [lk.ijse.posspringbackend.entity.impl.CustomerEntity.orders#C003] (uninitialized)
+20:02:15.606 [http-nio-8080-exec-4] DEBUG o.h.engine.internal.Collections - Collection found: [lk.ijse.posspringbackend.entity.impl.OrderEntity.orderDetails#ORD003], was: [lk.ijse.posspringbackend.entity.impl.OrderEntity.orderDetails#ORD003] (uninitialized)
+20:02:15.606 [http-nio-8080-exec-4] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 3 objects
+20:02:15.606 [http-nio-8080-exec-4] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
+20:02:15.607 [http-nio-8080-exec-4] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+20:02:15.607 [http-nio-8080-exec-4] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.CustomerEntity{address=Bandaragama, contact=0713686845, customerId=C003, name=Malithi Meth, orders=<uninitialized>}
+20:02:15.607 [http-nio-8080-exec-4] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.OrderEntity{orderDetails=<uninitialized>, total=90.0, balance=11.8, orderId=ORD003, discount=2.0, orderDate=null, paidAmount=100.0, customer=lk.ijse.posspringbackend.entity.impl.CustomerEntity#C003, newTotal=88.2}
+20:02:15.607 [http-nio-8080-exec-4] DEBUG o.h.internal.util.EntityPrinter - lk.ijse.posspringbackend.entity.impl.OrderDetailEntity{unitPrice=20.0, item=lk.ijse.posspringbackend.entity.impl.ItemEntity#I002, total=60.0, qty=3, id=4, order=lk.ijse.posspringbackend.entity.impl.OrderEntity#ORD003}
+20:02:15.623 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(650431126<open>)] after transaction
+20:02:15.624 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+20:02:15.624 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Nothing to write: null body
+20:02:15.625 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 201 CREATED
+20:02:15.633 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(571166919<open>)] after transaction
+20:02:15.635 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+20:02:15.635 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Nothing to write: null body
+20:02:15.635 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 201 CREATED

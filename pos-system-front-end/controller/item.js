@@ -1,4 +1,3 @@
-import ItemModel from "../model/ItemModel.js";
 
 // Initialize selected row index
 var selectedRowIndex = -1;
