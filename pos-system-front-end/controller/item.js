@@ -235,22 +235,20 @@ $("#btn-dlt-item").on('click', () => {
 });
 
 // Search item
-
-
-/*$("#item-search-form").on('submit', (event) => {
+$("#item-search-form").on('submit', (event) => {
     event.preventDefault();
     var searchId = $("#itemSearchBar").val().trim();
 
     $.ajax({
-        url: 'http://localhost:8080/possystem/item?id=' + searchId,
+        url: `http://localhost:8080/possystem/api/v1/item/${searchId}`,
         method: 'GET',
         dataType: 'json',
-        success: function (item) {
-            if (item) {
-                $("#modalItemId").text(item.itemId);
-                $("#modalItemDescription").text(item.description);
-                $("#modalItemPrice").text(item.unitPrice);
-                $("#modalItemQty").text(item.qtyOnHand);
+        success: function (response) {
+            if (response.itemDTO) {
+                $("#modalItemId").text(response.itemDTO.itemId);
+                $("#modalItemDescription").text(response.itemDTO.description);
+                $("#modalItemPrice").text(response.itemDTO.unitPrice);
+                $("#modalItemQty").text(response.itemDTO.qtyOnHand);
                 $("#itemModal").modal('show');
             } else {
                 alert("Item not found.");
@@ -260,35 +258,7 @@ $("#btn-dlt-item").on('click', () => {
             console.error('Failed to search item:', error);
         }
     });
-});*/
-
-// Search item
-$("#item-search-form").on('submit', (event) => {
-    event.preventDefault();
-    var searchId = $("#itemSearchBar").val().trim();  // Get the item ID from the search input
-
-    $.ajax({
-        url: `http://localhost:8080/possystem/api/v1/item/${searchId}`,  // Use the path variable to search for the item
-        method: 'GET',
-        dataType: 'json',
-        success: function (response) {  // Change this to handle the full response
-            if (response.itemDTO) {  // Check if itemDTO is present in the response
-                // Populate the modal with item data
-                $("#modalItemId").text(response.itemDTO.itemId);  // Accessing itemId from itemDTO
-                $("#modalItemDescription").text(response.itemDTO.description);
-                $("#modalItemPrice").text(response.itemDTO.unitPrice);
-                $("#modalItemQty").text(response.itemDTO.qtyOnHand);
-                $("#itemModal").modal('show');  // Show the modal with item details
-            } else {
-                alert("Item not found.");
-            }
-        },
-        error: function (xhr, status, error) {
-            console.error('Failed to search item:', error);
-        }
-    });
 });
-
 
 // Load the item table initially
 loadItemTable();
