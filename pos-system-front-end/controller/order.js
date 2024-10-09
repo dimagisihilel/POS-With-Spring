@@ -11,23 +11,23 @@ $(document).ready(function() {
 
         if (selectedCustomerId) {
             $.ajax({
-                url: `http://localhost:8080/possystem/api/v1/customer/${selectedCustomerId}`, // Updated URL
+                url: `http://localhost:8080/possystem/api/v1/customer/${selectedCustomerId}`,
                 method: 'GET',
                 success: function (data) {
                     console.log("Selected Customer:", data);
-                    if (data.statusCode === 0 && data.customerDTO) { // Check for statusCode and customerDTO
+                    if (data.statusCode === 0 && data.customerDTO) {
                         $("#customerName").val(data.customerDTO.name);
                     } else {
-                        $("#customerName").val(''); // Clear the field if no data
+                        $("#customerName").val('');
                     }
                 },
                 error: function (error) {
                     console.error('Error fetching customer details:', error);
-                    $("#customerName").val(''); // Clear the field on error
+                    $("#customerName").val('');
                 }
             });
         } else {
-            $("#customerName").val(''); // Clear the field if no ID is selected
+            $("#customerName").val('');
         }
     });
 
@@ -39,11 +39,11 @@ $(document).ready(function() {
 
         if (itemId) {
             $.ajax({
-                url: `http://localhost:8080/possystem/api/v1/item/${itemId}`, // Updated URL
+                url: `http://localhost:8080/possystem/api/v1/item/${itemId}`,
                 method: 'GET',
                 success: function (data) {
                     console.log("Selected Item:", data);
-                    if (data.statusCode === 0 && data.itemDTO) { // Check for statusCode and itemDTO
+                    if (data.statusCode === 0 && data.itemDTO) {
                         $("#itemOdDescription").val(data.itemDTO.description || '');
                         $("#itemOdUnitPrice").val(data.itemDTO.unitPrice || '');
                         $("#itemOdQty").val(data.itemDTO.qtyOnHand || '');
@@ -69,24 +69,7 @@ $(document).ready(function() {
     });
 });
 
-/*//Load next order Id
-function loadNextOrderId() {
-    $.ajax({
-        url: "http://localhost:8080/possystem/api/v1/order/nextId",
-        method: "GET",
-        data: {
-            nextId: true,
-            date:true
-        },
-        success: function(response) {
-            // Assuming the response is just the next order ID as a plain string
-            $("#orderId").val(response);
-        },
-        error: function(error) {
-            console.error("Error loading next order ID:", error);
-        }
-    });
-}*/
+//Load next order Id
 function loadNextOrderId() {
     $.ajax({
         url: "http://localhost:8080/possystem/api/v1/order/nextId",
@@ -99,7 +82,6 @@ function loadNextOrderId() {
         }
     });
 }
-
 
 //Load customers into dropdown
 function loadCustomers() {
@@ -149,7 +131,7 @@ $("#itemOdOrderQty").on('input', function () {
 });
 
 // Add item to the table and reduce quantity on hand
-/*$("#btnAddItem").on('click', function () {
+$("#btnAddItem").on('click', function () {
     let selectedItemId = $("#itemIdDropdown").val();
     let orderQty = parseInt($("#itemOdOrderQty").val());
     let totalPrice = parseFloat($("#itemOdTotPrice").val());
@@ -158,12 +140,13 @@ $("#itemOdOrderQty").on('input', function () {
         $.ajax({
             url: `http://localhost:8080/possystem/api/v1/item/${selectedItemId}`,
             method: 'GET',
-            success: function(item) {
-                if (item.qtyOnHand >= orderQty) {
-                    // Reduce quantity on hand
-                    item.qtyOnHand -= orderQty;
+            success: function(response) {
+                console.log("Fetched Item:", response);
 
-                    // Add item details to the table
+                const item = response.itemDTO;
+
+                if (item && item.qtyOnHand >= orderQty) {
+
                     let newRow = `
                         <tr>
                             <th scope="row">${item.itemId}</th>
@@ -179,9 +162,12 @@ $("#itemOdOrderQty").on('input', function () {
                     // Update total
                     updateTotal();
 
+                    // Reduce quantity on hand
+                    item.qtyOnHand -= orderQty;
+
                     // Update item quantity on the server
                     $.ajax({
-                        url: `http://localhost:8080/possystem/api/v1/item`,
+                        url: `http://localhost:8080/possystem/api/v1/item/${selectedItemId}`,
                         method: 'PUT',
                         contentType: 'application/json',
                         data: JSON.stringify({
@@ -206,76 +192,7 @@ $("#itemOdOrderQty").on('input', function () {
             }
         });
     }
-});*/
-
-
-// Add item to the table and reduce quantity on hand
-$("#btnAddItem").on('click', function () {
-    let selectedItemId = $("#itemIdDropdown").val();
-    let orderQty = parseInt($("#itemOdOrderQty").val());
-    let totalPrice = parseFloat($("#itemOdTotPrice").val());
-
-    if (selectedItemId && orderQty > 0 && totalPrice > 0) {
-        $.ajax({
-            url: `http://localhost:8080/possystem/api/v1/item/${selectedItemId}`, // Correct URL for fetching item details
-            method: 'GET',
-            success: function(response) {
-                console.log("Fetched Item:", response); // Log the entire response for debugging
-
-                // Access the itemDTO from the response
-                const item = response.itemDTO;
-
-                // Ensure qtyOnHand is available and sufficient
-                if (item && item.qtyOnHand >= orderQty) {
-                    // Add item details to the table
-                    let newRow = `
-                        <tr>
-                            <th scope="row">${item.itemId}</th>
-                            <td>${item.description}</td>
-                            <td>Rs.${item.unitPrice}</td>
-                            <td>${orderQty}</td>
-                            <td>${totalPrice.toFixed(2)}</td>
-                            <td><button type="button" class="btn btn-danger btnDelete">Delete</button></td>
-                        </tr>
-                    `;
-                    $(".PurchaseTbl tbody").append(newRow);
-
-                    // Update total
-                    updateTotal();
-
-                    // Reduce quantity on hand
-                    item.qtyOnHand -= orderQty;
-
-                    // Update item quantity on the server
-                    $.ajax({
-                        url: `http://localhost:8080/possystem/api/v1/item/${selectedItemId}`, // Correct URL for updating item
-                        method: 'PUT',
-                        contentType: 'application/json',
-                        data: JSON.stringify({
-                            itemId: item.itemId,
-                            description: item.description,
-                            unitPrice: item.unitPrice,
-                            qtyOnHand: item.qtyOnHand // Updated quantity
-                        }),
-                        success: function() {
-                            console.log('Item quantity updated successfully.');
-                        },
-                        error: function(err) {
-                            console.error('Error updating item quantity:', err);
-                        }
-                    });
-                } else {
-                    alert('Not enough quantity on hand.');
-                }
-            },
-            error: function(err) {
-                console.error('Error fetching item details:', err);
-            }
-        });
-    }
 });
-
-
 
 // Function to update the total amount
 function updateTotal() {
@@ -328,51 +245,6 @@ $("#paidAmount").on('input', function () {
 });
 
 // Delete button function
-
-/*$(document).on('click', '.btnDelete', function () {
-    let row = $(this).closest('tr');
-    let itemId = row.find("th").text();
-    let orderQty = parseInt(row.find("td:nth-child(4)").text());
-
-    // Restore quantity on hand
-    $.ajax({
-        url: `http://localhost:8080/possystem/api/v1/item/${itemId}`,
-        method: 'GET',
-        success: function(item) {
-            item.qtyOnHand += orderQty;
-
-            // Update item quantity on the server
-            $.ajax({
-                url: `http://localhost:8080/possystem/api/v1/item`,
-                method: 'PUT',
-                contentType: 'application/json',
-                data: JSON.stringify({
-                    itemId: item.itemId,
-                    description: item.description,
-                    unitPrice: item.unitPrice,
-                    qtyOnHand: item.qtyOnHand
-                }),
-                success: function() {
-                    console.log('Item quantity restored successfully.');
-                },
-                error: function(err) {
-                    console.error('Error restoring item quantity:', err);
-                }
-            });
-        },
-        error: function(err) {
-            console.error('Error fetching item details:', err);
-        }
-    });
-
-    // Remove row from table
-    row.remove();
-
-    // Update total
-    updateTotal();
-});*/
-
-// Delete button function
 $(document).on('click', '.btnDelete', function () {
     let row = $(this).closest('tr');
     let itemId = row.find("th").text();
@@ -383,7 +255,7 @@ $(document).on('click', '.btnDelete', function () {
         url: `http://localhost:8080/possystem/api/v1/item/${itemId}`,
         method: 'GET',
         success: function(response) {
-            console.log("Fetched Item:", response); // Log the entire response for debugging
+            console.log("Fetched Item:", response);
 
             // Access the itemDTO from the response
             const item = response.itemDTO;
@@ -394,14 +266,14 @@ $(document).on('click', '.btnDelete', function () {
 
                 // Update item quantity on the server
                 $.ajax({
-                    url: `http://localhost:8080/possystem/api/v1/item/${itemId}`, // Correct URL for updating the item
+                    url: `http://localhost:8080/possystem/api/v1/item/${itemId}`,
                     method: 'PUT',
                     contentType: 'application/json',
                     data: JSON.stringify({
                         itemId: item.itemId,
                         description: item.description,
                         unitPrice: item.unitPrice,
-                        qtyOnHand: item.qtyOnHand // Updated quantity
+                        qtyOnHand: item.qtyOnHand
                     }),
                     success: function() {
                         console.log('Item quantity restored successfully.');
@@ -426,9 +298,6 @@ $(document).on('click', '.btnDelete', function () {
     updateTotal();
 });
 
-
-
-
 // Function to clear form inputs
 function clearFormInputs() {
     $("#customerIdDropdown").val('');
@@ -446,8 +315,6 @@ function clearFormInputs() {
     $("#balance").val('');
     $(".PurchaseTbl tbody").empty();
 }
-
-
 //purchase order function
 $("#btnpurchase").on('click', function () {
     let orderId = $("#orderId").val(); // Use the auto-generated order ID
@@ -573,9 +440,3 @@ $("#btnpurchase").on('click', function () {
         }
     });
 });
-
-
-
-
-
-
