@@ -211,7 +211,7 @@ $("#btn-update-customer").on('click', () => {
 
     // Create the customer object matching the CustomerDTO
     let customer = {
-        customerId: updatedCustomerId,   // Matches your CustomerDTO field
+        customerId: updatedCustomerId,
         name: updatedCustomerName,
         address: updatedCustomerAddress,
         contact: updatedCustomerContact
@@ -263,8 +263,7 @@ $("#btn-dlt-customer").on('click', () => {
 });
 
 // Search customer
-
-/*$("#search-form").on('submit', (event) => {
+$("#search-form").on('submit', (event) => {
     event.preventDefault();
     var searchId = $("#searchBar").val().trim();
 
@@ -272,12 +271,12 @@ $("#btn-dlt-customer").on('click', () => {
         url: `http://localhost:8080/possystem/api/v1/customer/${searchId}`,
         method: 'GET',
         dataType: 'json',
-        success: function (customer) {
-            if (customer) {
-                $("#modalCustomerId").text(customer.customerId);  //id>Id
-                $("#modalCustomerName").text(customer.name);
-                $("#modalCustomerAddress").text(customer.address);
-                $("#modalCustomerContact").text(customer.contact);
+        success: function (response) {
+            if (response.customerDTO) {
+                $("#modalCustomerId").text(response.customerDTO.customerId);
+                $("#modalCustomerName").text(response.customerDTO.name);
+                $("#modalCustomerAddress").text(response.customerDTO.address);
+                $("#modalCustomerContact").text(response.customerDTO.contact);
                 $("#customerModal").modal('show');
             } else {
                 alert("Customer not found.");
@@ -287,35 +286,7 @@ $("#btn-dlt-customer").on('click', () => {
             console.error('Failed to search customer:', error);
         }
     });
-});*/
-
-// Search customer
-$("#search-form").on('submit', (event) => {
-    event.preventDefault();
-    var searchId = $("#searchBar").val().trim();  // Get the ID from the search input
-
-    $.ajax({
-        url: `http://localhost:8080/possystem/api/v1/customer/${searchId}`,  // Use the path variable
-        method: 'GET',
-        dataType: 'json',
-        success: function (response) {  // Change this to handle the full response
-            if (response.customerDTO) {  // Check if customerDTO is present in the response
-                // Populate the modal with customer data
-                $("#modalCustomerId").text(response.customerDTO.customerId);  // Accessing customerId from customerDTO
-                $("#modalCustomerName").text(response.customerDTO.name);
-                $("#modalCustomerAddress").text(response.customerDTO.address);
-                $("#modalCustomerContact").text(response.customerDTO.contact);
-                $("#customerModal").modal('show');  // Show the modal with customer details
-            } else {
-                alert("Customer not found.");
-            }
-        },
-        error: function (xhr, status, error) {
-            console.error('Failed to search customer:', error);
-        }
-    });
 });
-
 
 // Load table on page load
 $(document).ready(() => {
