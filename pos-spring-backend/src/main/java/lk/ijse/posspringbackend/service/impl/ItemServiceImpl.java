@@ -1,6 +1,7 @@
 package lk.ijse.posspringbackend.service.impl;
 
 import lk.ijse.posspringbackend.customStatusCode.SelectedErrorStatus;
+import lk.ijse.posspringbackend.dao.ItemDao;
 import lk.ijse.posspringbackend.dto.ItemStatus;
 import lk.ijse.posspringbackend.dto.impl.ItemDTO;
 import lk.ijse.posspringbackend.entity.impl.ItemEntity;
