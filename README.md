@@ -79,7 +79,7 @@ This project is a **Point of Sale (POS) System** backend developed using **Sprin
 
 You can explore the complete API documentation using **Postman** by importing the following collection:
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](your-postman-link-here)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://documenter.getpostman.com/view/36189383/2sAXxQdXaP)
 
 ## Testing
 
