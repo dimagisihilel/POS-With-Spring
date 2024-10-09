@@ -1,6 +1,7 @@
 package lk.ijse.posspringbackend.service.impl;
 
 import lk.ijse.posspringbackend.dao.OrderDao;
+import lk.ijse.posspringbackend.dao.OrderDetailDao;
 import lk.ijse.posspringbackend.dto.impl.OrderDetailDTO;
 import lk.ijse.posspringbackend.entity.impl.OrderDetailEntity;
 import lk.ijse.posspringbackend.entity.impl.OrderEntity;
