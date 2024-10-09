@@ -7,8 +7,6 @@ import lk.ijse.posspringbackend.exception.DataPersistException;
 import lk.ijse.posspringbackend.exception.ItemNotFoundException;
 import lk.ijse.posspringbackend.service.ItemService;
 import lk.ijse.posspringbackend.util.RegexUtil;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -37,7 +35,6 @@ public class ItemController {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
-
     @GetMapping(value = "/{itemId}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ItemStatus getSelectedItem(@PathVariable("itemId") String itemId) {
         String regexForItemId = RegexUtil.ITEM_ID_REGEX;
@@ -49,7 +46,6 @@ public class ItemController {
         }
         return itemService.getItem(itemId);
     }
-
     @DeleteMapping(value = "/{itemId}")
     public ResponseEntity<Void> deleteItem(@PathVariable("itemId") String itemId) {
         String regexForItemId = RegexUtil.ITEM_ID_REGEX;
@@ -68,12 +64,10 @@ public class ItemController {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
-
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public List<ItemDTO> getAllItems() {
         return itemService.getAllItems();
     }
-
     @PutMapping(value = "/{itemId}", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Void> updateItem(@RequestBody ItemDTO itemDTO, @PathVariable("itemId") String itemId) {
         String regexForItemId = RegexUtil.ITEM_ID_REGEX;
