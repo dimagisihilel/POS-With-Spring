@@ -34,13 +34,11 @@ public class CustomerServiceImpl implements CustomerService {
             throw new DataPersistException("Failed to save customer");
         }
     }
-
     @Override
     public List<CustomerDTO> getAllCustomers() {
         List<CustomerEntity> allCustomers = customerDao.findAll();
         return mapping.asCustomerDtoList(allCustomers);
     }
-
     @Override
     public CustomerStatus getCustomer(String customerId) {
         if (customerDao.existsById(customerId)) {
@@ -51,9 +49,6 @@ public class CustomerServiceImpl implements CustomerService {
             return new SelectedErrorStatus(2, "Customer not found");
         }
     }
-
-
-
     @Override
     public void deleteCustomer(String customerId) {
         Optional<CustomerEntity> existedCustomer = customerDao.findById(customerId);
@@ -63,7 +58,6 @@ public class CustomerServiceImpl implements CustomerService {
             customerDao.deleteById(customerId);
         }
     }
-
     @Override
     public void updateCustomer(String customerId, CustomerDTO customerDTO) {
         Optional<CustomerEntity> tempCustomer = customerDao.findById(customerId);
